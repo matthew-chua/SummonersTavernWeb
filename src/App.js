@@ -1,21 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components:
-import Intro from "./Sections/Intro/Intro";
-import Lore from "./Sections/Lore/Lore";
-import Attributes from "./Sections/Attributes/Attributes";
-import CharIntro from "./Sections/CharIntro/CharIntro";
-import Elders from "./Sections/Elders/Elders";
+
+
+import LandingPage from "./LandingPage";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Intro />
-        <Lore />
-        <Attributes />
-        <CharIntro />
-        <Elders />
+        <LandingPage/>
       </div>
     </Router>
   );

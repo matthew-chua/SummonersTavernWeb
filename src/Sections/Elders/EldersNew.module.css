@@ -1,0 +1,69 @@
+.title {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 3vw;
+  margin-bottom: 5vh;
+}
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.firstRow {
+  display: flex;
+  justify-content: space-around;
+}
+.secondRow {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+}
+.pic {
+  width: 20vw;
+}
+.credentials {
+  background-color: #ededed;
+  width: 100%;
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.tavernText {
+  font-size: 4vw;
+  font-weight: 500;
+  font-style: italic;
+}
+.byText {
+  color: #42434b;
+  display: inline-block;
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  vertical-align: center;
+}
+.name{
+    font-size: 2vw;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    font-style: italic;
+}
+.desc{
+    font-size: 1.4vw;
+}
+
+@media only screen and (max-width: 500px) {
+    .firstRow{
+        display: flex;
+        flex-direction: column;
+    }
+    .secondRow{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+    }
+    .elder{
+        padding-bottom: 1rem;
+    }
+  }

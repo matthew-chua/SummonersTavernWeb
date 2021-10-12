@@ -1,4 +1,6 @@
 import React from "react";
+import matt from "../../Assets/matt.png";
+
 
 // Styles:
 import classes from "./Elders.module.css";
@@ -7,7 +9,7 @@ const ELDERS_DETAILS = [
   { name: "CT", image: "", desc: "Creator" },
   { name: "Cheng", image: "", desc: "Creator" },
   { name: "JR", image: "", desc: "Artist" },
-  { name: "Mattsies", image: "", desc: "NFT Dev" },
+  { name: "mattsies", image: "../../Assets/matt.png", desc: "NFT Dev" },
   { name: "Victzy", image: "", desc: "NFT Dev" },
 ];
 
@@ -15,17 +17,20 @@ function Elders() {
   return (
     <>
       <div className={classes.elderPageCont}>
+        <img src={matt}/>
         <h1 className={classes.title}>Elders</h1>
         <div className={classes.eldersCont}>
           {ELDERS_DETAILS.map((elder) => (
             <div className={classes.elder}>
               <h2 className={classes.name}>{elder.name}</h2>
               <div className={classes.profileImgCont}>
-                <img
+                {/* <img
                   className={classes.profileImg}
-                  src={`${elder.image}`}
+                  src={require({elder.image} +
+                  item.image +
+                  '.png')}
                   alt={`profile-${elder.name}`}
-                />
+                /> */}
               </div>
               <span className={classes.desc}>{elder.desc}</span>
             </div>
