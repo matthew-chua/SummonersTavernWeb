@@ -1,5 +1,14 @@
 .App {
   text-align: center;
   background-color: #42434b;
-  width: 100vw;
+  width: 100%;
+}
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

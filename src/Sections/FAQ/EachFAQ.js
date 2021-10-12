@@ -4,8 +4,16 @@ import classes from "./EachFAQ.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 
+// Custom Hook:
+import useWindowDimensions from "../../useWindowDimensions";
+
+// Function to get window dimensions:
+
 function EachFAQ({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Getting width:
+  const { height, width } = useWindowDimensions();
   return (
     <div
       onClick={() => setIsOpen((prevState) => !prevState)}
@@ -15,7 +23,7 @@ function EachFAQ({ question, answer }) {
       <FontAwesomeIcon
         icon={faChevronCircleDown}
         className={isOpen ? classes.dropDownButOpen : classes.dropDownBut}
-        size="4x"
+        size={width > 800 ? "4x" : "2x"}
       />
 
       {isOpen && (
