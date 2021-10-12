@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.elderPageCont {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw 0 5vw;
+  /* align-items: center; */
+  /* width: 90%; */
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 2vh;
+}
+
+.eldersCont {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* width: 80%; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.elder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  max-width: 400px;
+  justify-content: flex-start;
+  margin: 3vh 20px;
+}
+
+.name {
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-bottom: 2vh;
+  font-style: italic;
+}
+
+.profileImgCont {
+  background-color: red;
+  height: 40vw;
+  max-height: 200px;
+  width: 40vw;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+}
+
+.profileImg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.desc {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
+
+.credentials {
+  background-color: #ededed;
+  width: 100%;
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.byText {
+  color: #42434b;
+  display: inline-block;
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  vertical-align: center;
+}
+
+.tavernText {
+  font-size: 4vw;
+  font-weight: 500;
+  font-style: italic;
+}

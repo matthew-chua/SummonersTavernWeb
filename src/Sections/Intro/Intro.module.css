@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.introPageCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.topCont {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 100rem;
+  justify-content: space-around;
+}
+
+.mascotCont {
+  display: flex;
+  width: 40vw;
+  background-color: red;
+}
+
+.counterTextCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.greetings {
+  font-size: 3.5vw;
+  margin-bottom: 3vh;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.greetingsText {
+  font-size: 2vw;
+  margin-bottom: 10vh;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.counterCont {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.timeHeadersCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.75vw;
+  font-weight: 400;
+  position: relative;
+}
+
+.timeHeadersCont::after {
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  content: ":";
+}
+
+.timeHeadersCont1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.75vw;
+  font-weight: 400;
+  position: relative;
+}
+
+.time {
+  font-size: 3.5vw;
+  margin-top: 1.5vh;
+}
+
+.bottomCont {
+  margin-top: 10vh;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.litePaper {
+  font-size: 4vw;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* border: none; */
+}
+
+.litePaper:hover {
+  color: #ffffff;
+  transition: 0.1s ease;
+}
+
+.socialMediaCont {
+  display: flex;
+}
+
+.mediaGroup {
+  display: flex;
+  align-items: center;
+  margin: 5vh 10% 0 10%;
+  text-decoration: none;
+  justify-content: center;
+  color: inherit;
+  transition: 0.1s ease;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.mediaGroup:hover {
+  color: #ffffff;
+}
+.smImg {
+  color: inherit;
+}
+.mediaName {
+  font-size: 2.25vw;
+  margin-left: 0.5vw;
+}

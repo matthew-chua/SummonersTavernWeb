@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loreCont {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 5vw 5vh 5vw;
+}
+
+.title {
+  font-size: 3.5vw;
+  font-weight: 400;
+  margin-bottom: 5vh;
+}
+
+.loreDetailsCont {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.imgCont {
+  width: 40rem;
+  height: 20rem;
+  background-color: red;
+}
+
+.paraCont {
+  width: 30rem;
+  text-align: justify;
+  font-size: 1.5vw;
+}
+
+.text {
+  margin-bottom: 2vh;
+}
