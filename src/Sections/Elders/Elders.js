@@ -16,7 +16,7 @@ const ELDERS_DETAILS = [
 function Elders() {
   return (
     <>
-      <div className={classes.elderPageCont}>
+      <div className={classes.elderPageCont} id="elders">
         <img src={matt}/>
         <h1 className={classes.title}>Elders</h1>
         <div className={classes.eldersCont}>

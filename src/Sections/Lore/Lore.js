@@ -4,7 +4,7 @@ import classes from "./Lore.module.css";
 
 function Lore() {
   return (
-    <div className={classes.loreCont}>
+    <div id="lore" className={classes.loreCont}>
       <h1 className={classes.title}>LORE</h1>
       <div className={classes.loreDetailsCont}>
         <div className={classes.imgCont}>

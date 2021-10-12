@@ -1,0 +1,32 @@
+.root {
+  padding: 5rem;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-bottom: 4vh;
+}
+.subtitle {
+  padding-top: 3rem;
+}
+.discord{
+    padding-right: 2rem;
+}
+.twitter{
+    padding-left: 2rem;
+}
+.pic{
+    width: 8vw;
+}
+.label{
+    font-size: 2.5vw;
+}
+.link{
+    color: #e0dacb;
+    text-decoration: none;
+}

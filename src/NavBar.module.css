@@ -1,0 +1,32 @@
+.root{
+    position: fixed;
+    top: 3%;
+    padding-left: 8vw;
+    /* padding-right: 5vw; */
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}
+.link{
+    padding: 1rem;
+    color: #e0dacb;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+.icon{
+    cursor: pointer;
+    padding: 1rem;
+}

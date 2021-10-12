@@ -20,6 +20,7 @@ function Intro() {
     minutes: 0,
     seconds: 0,
   });
+  
   const openLink = (link) => {
     const newWindow = window.open(link, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -60,7 +61,7 @@ function Intro() {
     };
   }, [timer]);
   return (
-    <div className={classes.introPageCont}>
+    <div className={classes.introPageCont} id="home">
       <div className={classes.topCont}>
         <div className={classes.mascotCont}>
           <img src="" alt="mascot" />
@@ -68,7 +69,7 @@ function Intro() {
         <div className={classes.counterTextCont}>
           <h1 className={classes.greetings}>Greetings Summoner,</h1>
           <span className={classes.greetingsText}>
-            Welcome to Summoner's Tavern.
+            Welcome to The Summoner's Tavern.
           </span>
           <div className={classes.counterCont}>
             <div className={classes.timeHeadersCont}>
@@ -102,34 +103,34 @@ function Intro() {
         >
           LITEPAPER
         </button>
-        <div className={classes.socialMediaCont}>
+        {/* <div className={classes.socialMediaCont}>
           <button
             onClick={() => openLink("https://discord.gg/zATSbfzx")}
             className={classes.mediaGroup}
           >
-            {/* <div className={classes.smImgCont}> */}
+             <div className={classes.smImgCont}> 
             <img
               className={classes.smImg}
               src={discordLogo}
               alt="discord-logo"
             />
-            {/* </div> */}
+            </div>
             <span className={classes.mediaName}>Discord</span>
           </button>
           <button
             onClick={() => openLink("https://twitter.com/SummonersTavern")}
             className={classes.mediaGroup}
           >
-            {/* <div className={classes.smImgCont}> */}{" "}
+            <div className={classes.smImgCont}>{" "}
             <img
               className={classes.smImg}
               src={twitterLogo}
               alt="twitter-logo"
             />
-            {/* </div> */}
+            </div>
             <span className={classes.mediaName}>Twitter</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

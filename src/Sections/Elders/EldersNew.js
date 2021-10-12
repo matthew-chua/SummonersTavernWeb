@@ -8,7 +8,7 @@ import matt from "../../Assets/matt.png";
 
 export default function EldersNew() {
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="elders">
       <h1 className={classes.title}>ELDERS</h1>
 
       <div className={classes.firstRow}>
@@ -42,12 +42,12 @@ export default function EldersNew() {
         </div>
       </div>
 
-      <div className={classes.credentials}>
+      {/* <div className={classes.credentials}>
         <span className={classes.byText}>
           Yours Truly:{" "}
           <span className={classes.tavernText}>Summoner's Tavern</span>
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }
