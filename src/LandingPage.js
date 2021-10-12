@@ -6,25 +6,34 @@ import Lore from "./Sections/Lore/Lore";
 import Attributes from "./Sections/Attributes/Attributes";
 import NavBar from "./NavBar";
 import Socials from "./Sections/Socials";
+import FAQ from "./Sections/FAQ/FAQ";
 
 //animations
 import {Fade} from "react-reveal";
 
 //css
 
-
 export default function LandingPage() {
   return (
     <div>
+<<<<<<< Updated upstream
       <NavBar/>
       <Fade bottom>
+=======
+      <NavBar />
+>>>>>>> Stashed changes
       <Intro />
       <Lore />
       <Attributes />
       {/* <CharIntro /> */}
+      <FAQ />
       <Elders />
+<<<<<<< Updated upstream
       <Socials/>
       </Fade>
+=======
+      <Socials />
+>>>>>>> Stashed changes
     </div>
   );
 }
