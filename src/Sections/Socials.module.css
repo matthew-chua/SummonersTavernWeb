@@ -14,19 +14,38 @@
 .subtitle {
   padding-top: 3rem;
 }
-.discord{
-    padding-right: 2rem;
+.discord {
+  padding-right: 2rem;
+  transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  transform: scale(1);
 }
-.twitter{
-    padding-left: 2rem;
+.twitter {
+  padding-left: 2rem;
+  transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  transform: scale(1);
 }
-.pic{
-    width: 8vw;
+.twitter:hover{
+  transform: scale(1.1);
 }
-.label{
-    font-size: 2.5vw;
+
+.discord:hover{
+  transform: scale(1.1);
 }
-.link{
-    color: #e0dacb;
-    text-decoration: none;
+.pic {
+  width: 8vw;
+}
+.label {
+  font-size: 2.5vw;
+}
+.link {
+  color: #e0dacb;
+  text-decoration: none;
 }

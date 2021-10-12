@@ -101,11 +101,19 @@
   cursor: pointer;
   font-family: inherit;
   /* border: none; */
+  transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  transform: scale(1);
 }
 
 .litePaper:hover {
   color: #ffffff;
   transition: 0.1s ease;
+  transform: scale(1.2);
+
 }
 
 .socialMediaCont {
