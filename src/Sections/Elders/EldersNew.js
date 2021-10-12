@@ -9,7 +9,7 @@ import matt from "../../Assets/matt.png";
 export default function EldersNew() {
   return (
     <div className={classes.root}>
-      <h1 className={classes.title}>Elders</h1>
+      <h1 className={classes.title}>ELDERS</h1>
 
       <div className={classes.firstRow}>
         <div className={classes.elder}>

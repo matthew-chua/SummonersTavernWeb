@@ -35,14 +35,14 @@
 
 .greetings {
   font-size: 3.5vw;
-  margin-bottom: 3vh;
+  margin-bottom: 20px;
   font-weight: 400;
   font-style: italic;
 }
 
 .greetingsText {
   font-size: 2vw;
-  margin-bottom: 10vh;
+  margin-bottom: 40px;
   color: #ffffff;
   font-style: italic;
 }
@@ -135,4 +135,59 @@
 .mediaName {
   font-size: 2.25vw;
   margin-left: 0.5vw;
+}
+
+@media screen and (max-width: 600px) {
+  .introPageCont {
+    /* height: auto; */
+  }
+  .topCont {
+    flex-direction: column-reverse;
+    width: 90%;
+    /* font-size: 1vw; */
+    text-align: center;
+    /* padding: 0 10vw 0 10vw; */
+    align-items: center;
+  }
+
+  .counterTextCont {
+    margin-bottom: 2rem;
+  }
+
+  .mascotCont {
+    width: 70vw;
+    /* height: auto; */
+    height: 40vh;
+  }
+
+  .greetings {
+    font-size: 8vw;
+  }
+
+  .greetingsText {
+    font-size: 4vw;
+  }
+
+  .counterCont {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .bottomCont {
+    margin-top: 3vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .litePaper {
+    font-size: 9vw;
+  }
+
+  .socialMediaCont {
+    justify-content: center;
+  }
+
+  .mediaName {
+    font-size: 6vw;
+  }
 }

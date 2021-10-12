@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import moment from "moment";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
+// Logos:
+import discordLogo from "../../Assets/discordLogo.svg";
+import twitterLogo from "../../Assets/twitterLogo1.svg";
 
 // Styles:
 import classes from "./Intro.module.css";
@@ -10,6 +14,12 @@ const LAUNCH_DATE = moment([2021, 11, 15, 7, 0, 0]).valueOf();
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
+  const [timer, setTimer] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
   const openLink = (link) => {
     const newWindow = window.open(link, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -20,9 +30,35 @@ function Intro() {
     console.log(now);
     let countDownTimer = setInterval(() => {
       let timeLeft = LAUNCH_DATE - now;
+
+      let daysLeft = Math.floor(timeLeft / (86400 * 1000));
+      console.log("DayLeft: ", daysLeft);
+      let hoursLeft = Math.floor(
+        (timeLeft - daysLeft * 86400 * 1000) / (3600 * 1000)
+      );
+      let minutesLeft = Math.floor(
+        (timeLeft - daysLeft * 86400 * 1000 - hoursLeft * 3600 * 1000) /
+          (60 * 1000)
+      );
+      let secondsLeft = Math.floor(
+        (timeLeft -
+          daysLeft * 86400 * 1000 -
+          hoursLeft * 3600 * 1000 -
+          minutesLeft * 60 * 1000) /
+          1000
+      );
+
+      setTimer({
+        days: daysLeft,
+        hours: hoursLeft,
+        minutes: minutesLeft,
+        seconds: secondsLeft,
+      });
     }, 1000);
-    return () => {};
-  }, []);
+    return () => {
+      clearInterval(countDownTimer);
+    };
+  }, [timer]);
   return (
     <div className={classes.introPageCont}>
       <div className={classes.topCont}>
@@ -37,20 +73,20 @@ function Intro() {
           <div className={classes.counterCont}>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Days</span>
-              <span className={classes.time}>01</span>
+              <span className={classes.time}>{timer?.days}</span>
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Hours</span>
-              <span className={classes.time}>07</span>
+              <span className={classes.time}>{timer?.hours}</span>
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Minutes</span>
-              <span className={classes.time}>44</span>
+              <span className={classes.time}>{timer?.minutes}</span>
             </div>
             <div className={classes.timeHeadersCont1}>
               <span className={classes.timeHeader}>Seconds</span>
 
-              <span className={classes.time}>34</span>
+              <span className={classes.time}>{timer?.seconds}</span>
             </div>
           </div>
         </div>
@@ -74,7 +110,7 @@ function Intro() {
             {/* <div className={classes.smImgCont}> */}
             <img
               className={classes.smImg}
-              src="/Assets/discordLogo.svg"
+              src={discordLogo}
               alt="discord-logo"
             />
             {/* </div> */}
@@ -87,7 +123,7 @@ function Intro() {
             {/* <div className={classes.smImgCont}> */}{" "}
             <img
               className={classes.smImg}
-              src="/Assets/twitterLogo1.svg"
+              src={twitterLogo}
               alt="twitter-logo"
             />
             {/* </div> */}

@@ -43,27 +43,34 @@
   text-align: center;
   vertical-align: center;
 }
-.name{
-    font-size: 2vw;
-    font-weight: 400;
-    margin-bottom: 2vh;
-    font-style: italic;
+.name {
+  font-size: 2vw;
+  font-weight: 400;
+  margin-bottom: 2vh;
+  font-style: italic;
 }
-.desc{
-    font-size: 1.4vw;
+.desc {
+  font-size: 1.4vw;
 }
 
-@media only screen and (max-width: 500px) {
-    .firstRow{
-        display: flex;
-        flex-direction: column;
-    }
-    .secondRow{
-        display: flex;
-        flex-direction: column;
-        padding-top: 0rem;
-    }
-    .elder{
-        padding-bottom: 1rem;
-    }
+@media only screen and (max-width: 600px) {
+  .root {
+    margin-top: 5vh;
   }
+  .firstRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+  .elder {
+    padding-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 8.5vw;
+  }
+}
