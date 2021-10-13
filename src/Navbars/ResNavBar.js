@@ -2,9 +2,9 @@ import React from "react";
 
 import classes from "./ResNavBar.module.css";
 
-function ResNavBar({ menuOpen, setMenuOopen }) {
+function ResNavBar({ menuOpen, setMenuOpen }) {
   const menuOnClickHandler = () => {
-    setMenuOopen((prevState) => !prevState);
+    setMenuOpen((prevState) => !prevState);
   };
   return (
     <div className={classes.root}>

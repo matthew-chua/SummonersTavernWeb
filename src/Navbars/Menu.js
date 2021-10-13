@@ -16,7 +16,7 @@ function Menu({ menuOpen, setMenuOpen }) {
           <ul className={classes.ul}>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#home"
                 data-text="home"
                 onClick={closeMenuHandler}
@@ -26,7 +26,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#lore"
                 data-text="lore"
                 onClick={closeMenuHandler}
@@ -36,7 +36,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#attributes"
                 data-text="attributes"
                 onClick={closeMenuHandler}
@@ -46,7 +46,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#char"
                 data-text="Characters"
                 onClick={closeMenuHandler}
@@ -56,7 +56,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#faq"
                 data-text="FAQ"
                 onClick={closeMenuHandler}
@@ -66,7 +66,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#elders"
                 data-text="Elders"
                 onClick={closeMenuHandler}
@@ -76,7 +76,7 @@ function Menu({ menuOpen, setMenuOpen }) {
             </li>
             <li className={classes.li}>
               <a
-                className={classes.a}
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#socials"
                 data-text="Socials"
                 onClick={closeMenuHandler}

@@ -1,11 +1,11 @@
-* .menu {
+.menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 75%;
   height: 100%;
-  z-index: 5;
-  visibility: hidden;
+  z-index: -1;
+  /* visibility: hidden; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
   background: #373737;
 
   opacity: 0.8;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 200vw;
   height: 200vw;
   display: flex;
@@ -24,8 +24,9 @@
   flex: none;
   align-items: center;
   justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
+  /* transform: scale(0); */
+  /* transform: translateX(75%); */
+  transition: all 0.8s linear;
 }
 
 .section {
@@ -52,11 +53,12 @@
   text-align: center;
   color: #fff;
   text-decoration: none;
-  opacity: 1;
+  opacity: 0;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
+  transform: translateX(160%);
 }
 
 .a::before {
@@ -73,7 +75,7 @@
   color: #9d857f;
   opacity: 0;
   line-height: 100vh;
-  transition: 0.5s ease;
+  transition: 0.5s ease-out;
 }
 
 .a::before:focus,
@@ -87,10 +89,17 @@
 
 .wrapperActive {
   transform: scale(1);
-  transition: 0.75s ease 0.8s;
+  /* transition: 0.75s ease 0.8s; */
+  transition: all 0.8s linear;
 }
 
 .wrapperActive {
   opacity: 1;
   transition: opacity 0.4s ease 0.4;
+}
+
+.aActive {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.05s 0.35s ease-out;
 }

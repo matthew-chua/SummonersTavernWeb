@@ -16,12 +16,13 @@ import Mission from "./Sections/Mission";
 import Vision from "./Sections/Vision";
 
 //css
+import classes from "./LandingPage.module.css";
 
 // Custom Hook:
 import useWindowDimensions from "./useWindowDimensions";
 
-export default function LandingPage() {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function LandingPage({ menuOpen, setMenuOpen }) {
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -34,22 +35,24 @@ export default function LandingPage() {
   return (
     <div>
       {width > 800 && <NavBar />}
-      {width <= 800 && (
+      {/* {width <= 800 && (
         <>
           <ResNavBar menuOpen={menuOpen} setMenuOopen={setMenuOpen} />
           <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "}
         </>
-      )}
+      )} */}
       <Fade bottom>
-        <Intro />
-        <Lore />
-        <Mission />
-        <Vision />
-        <Attributes />
-        <CharIntro />
-        <FAQ />
-        <Elders />
-        <Socials />
+        <div className={classes.root}>
+          <Intro />
+          <Lore />
+          <Mission />
+          <Vision />
+          <Attributes />
+          <CharIntro />
+          <FAQ />
+          <Elders />
+          <Socials />
+        </div>
       </Fade>
     </div>
   );
