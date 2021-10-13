@@ -8,8 +8,8 @@ import pic from "../../Assets/unknown.png";
 
 function CharIntro() {
   return (
-    <div className={classes.charIntroCont}>
-      <h1 className={classes.title}>CHARACTER INTRODUCTION</h1>
+    <div className={classes.charIntroCont} id="char">
+      <h1 className={classes.title}>CHARACTERS</h1>
 
       <div className={classes.content}>
         <div className={classes.top}>

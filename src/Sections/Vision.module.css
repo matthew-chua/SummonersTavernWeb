@@ -1,0 +1,13 @@
+.root{
+
+}
+.pic{
+    width: 90vw;
+}
+
+.title {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }

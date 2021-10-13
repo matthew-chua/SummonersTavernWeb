@@ -10,6 +10,8 @@ import FAQ from "./Sections/FAQ/FAQ";
 
 //animations
 import { Fade } from "react-reveal";
+import Mission from "./Sections/Mission";
+import Vision from "./Sections/Vision";
 
 //css
 
@@ -20,6 +22,8 @@ export default function LandingPage() {
       <Fade bottom>
         <Intro />
         <Lore />
+        <Mission/>
+        <Vision/>
         <Attributes />
         <CharIntro />
         <FAQ />

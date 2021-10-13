@@ -1,0 +1,17 @@
+.root{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }
+  .gif{
+      width: 35vw;
+  }

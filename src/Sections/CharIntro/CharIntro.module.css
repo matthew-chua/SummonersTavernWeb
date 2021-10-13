@@ -10,7 +10,7 @@
   width: 100%;
   align-items: center;
   margin: 10vh 0 10vh 0;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 5rem;
 }
 
@@ -57,12 +57,14 @@
   }
   .bottom{
     flex-direction: column;
+    padding-top: 0rem;
   }
   .title {
     font-size: 8.5vw;
   }
   .char{
     width: 50vw;
+    padding-bottom: 2rem;
   }
   .pic{
     width: 50vw;
