@@ -25,6 +25,9 @@ export default function NavBar() {
         <a className={classes.link} href="#attributes">
           Attributes
         </a>
+        <a className={classes.link} href="#faq">
+          FAQ
+        </a>
         <a className={classes.link} href="#elders">
           Elders
         </a>

@@ -12,7 +12,7 @@ function FAQ() {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState([]);
   return (
-    <div className={classes.FAQPageCont}>
+    <div className={classes.FAQPageCont} id="faq">
       <h1 className={classes.title}>FAQ</h1>
       <div className={classes.FAQCont}>
         {FAQ_LIST.map((faq) => (
