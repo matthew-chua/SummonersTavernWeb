@@ -1,0 +1,87 @@
+.root {
+  position: fixed;
+  /* top: 3%; */
+  /* padding-left: 8vw;
+  padding-right: 5vw; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* background-color: #42434b; */
+  /* background-color: #fff; */
+  background-color: #373737;
+  z-index: 500;
+  height: 60px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  padding: 1rem;
+  color: #e0dacb;
+  text-decoration: none;
+  font-size: 5.5vw;
+  font-weight: 400;
+  margin-right: 20vw;
+  font-style: italic;
+}
+
+.rightHam {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  /* background-color: aqua; */
+  transform: scale(0.7);
+  transition: all 0.8s ease;
+}
+
+.menuGlobal {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  border-top: 7px solid white;
+  width: 100%;
+  transition: all 0.55s ease;
+  /* border-top: 7px solid rgb(124, 124, 124); */
+  height: 2px;
+
+  content: "";
+  /* background-color: black; */
+  /* background-color: black; */
+}
+
+.menuTop {
+  top: 0;
+}
+
+.menuMiddle {
+  top: 18px;
+}
+
+.menuBottom {
+  top: 36px;
+}
+
+.menuTopClick {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+
+.menuMiddleClick {
+  opacity: 0;
+}
+
+.menuBottomClick {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}

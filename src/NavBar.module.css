@@ -13,10 +13,10 @@
   padding: 1rem;
   color: #e0dacb;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
-.link:hover{
-    text-decoration: underline;
+.link:hover {
+  text-decoration: underline;
 }
 .left {
   display: flex;
@@ -40,9 +40,7 @@
   -moz-transition: 0.1s ease-in;
   -webkit-transition: 0.1s ease-in;
   transform: scale(1);
-
 }
-.icon:hover{
+.icon:hover {
   transform: scale(1.1);
-    
 }
