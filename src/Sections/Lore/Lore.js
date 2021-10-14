@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./Lore.module.css";
 
 //assets
-import lore from "../../Assets/lore.png";
+import lore from "../../Assets/newlore.png";
 
 function Lore() {
   return (

@@ -27,14 +27,15 @@
   width: 20vw;
 }
 .char {
-  width: 30vw;
+  width: 20vw;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .top {
   display: flex;
-  
+  flex-direction: row;
+  justify-content: center;
 }
 .bottom {
   display: flex;
@@ -49,7 +50,7 @@
 }
 
 .desc {
-  width: 20vw;
+  width: 15vw;
   font-style: italic;
 }
 

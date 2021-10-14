@@ -19,6 +19,7 @@ function CharIntro() {
 
       <div className={classes.content}>
         <div className={classes.top}>
+          
           <div className={classes.char}>
             <img src={post} className={classes.pic} />
             <h3 className={classes.name}>Lilith</h3>

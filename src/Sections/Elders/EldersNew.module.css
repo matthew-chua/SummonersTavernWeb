@@ -12,15 +12,15 @@
 }
 .firstRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .secondRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 3rem;
 }
 .pic {
-  width: 22vw;
+  width: 15vw;
   border-radius: 1rem;
   -webkit-box-shadow: 0px 5px 18px 5px rgba(0, 0, 0, 0.78);
   box-shadow: 0px 5px 18px 5px rgba(0, 0, 0, 0.78);
@@ -71,12 +71,13 @@
 .desc {
   padding-top: 2rem;
   font-size: 1.4vw;
-  width: 22vw;
+  width: 15vw;
 }
 .elder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
