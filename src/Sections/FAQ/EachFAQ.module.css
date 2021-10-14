@@ -40,9 +40,11 @@
   top: 7.5vh;
   transform: translateY(-50%);
   left: 5%;
-  font-size: 2vw;
+  font-size: 4vh;
+  max-width: 80%;
   opacity: 100%;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .dropDownBut {
@@ -70,12 +72,28 @@
   font-size: 1.5vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .text {
     font-size: 2.5vw;
   }
 
   .faqIndivContOpen {
     height: 30vh;
+  }
+
+  .dropDownBut {
+    top: 5vh;
+  }
+
+  .dropDownButOpen {
+    top: 4vh;
+  }
+
+  .text {
+    top: 5vh;
+  }
+
+  .answer {
+    top: 11vh;
   }
 }

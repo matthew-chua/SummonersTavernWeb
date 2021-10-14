@@ -7,6 +7,9 @@ import moment from "moment";
 import heads from "../../Assets/mascot.png";
 import STLogo from "../../Assets/stLogo.png";
 
+// Custom Hooks:
+import useWindowDimensions from "../../useWindowDimensions";
+
 // Styles:
 import classes from "./Intro.module.css";
 // unix timestamp of the actual launch time:
@@ -14,6 +17,7 @@ const LAUNCH_DATE = moment([2021, 11, 15, 7, 0, 0]).valueOf();
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
+  const { height, width } = useWindowDimensions();
   const openLink = (link) => {
     const newWindow = window.open(link, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -61,17 +65,21 @@ function Intro() {
   }, [timer]);
   return (
     <div className={classes.introPageCont} id="home">
+      {width < 800 && (
+        <div className={classes.headerCont}>
+          <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+        </div>
+      )}
       <div className={classes.topCont}>
-        {/* <div className={classes.headerCont}>
-            <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
-          </div> */}
         <div className={classes.mascotCont}>
-          <img src={heads} alt="mascot" className={classes.mascot}/>
+          <img src={heads} alt="mascot" className={classes.mascot} />
         </div>
         <div className={classes.counterTextCont}>
-          <div className={classes.headerCont}>
-            <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
-          </div>
+          {width >= 800 && (
+            <div className={classes.headerCont}>
+              <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+            </div>
+          )}
           <h1 className={classes.greetings}>Greetings Summoner,</h1>
           <p className={classes.subtitle}>Next summoning in...</p>
           {/* <span className={classes.greetingsText}>

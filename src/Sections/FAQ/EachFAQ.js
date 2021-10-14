@@ -34,9 +34,9 @@ function EachFAQ({ question, answer }) {
             : { height: "15vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 20) * 2 + 20}vh`,
+              height: `${Math.floor(wordCounter(answer) / 22) * 2 + 15}vh`,
             }
-          : { height: "15vh" }
+          : { height: "10vh" }
       }
     >
       <span className={classes.text}>{question}</span>
@@ -54,7 +54,7 @@ function EachFAQ({ question, answer }) {
                   display: "flex",
                   opacity: "100%",
                   transition: "all 0.3s ease",
-                  top: `${width > 800 ? "20vh" : "15vh"}`,
+                  // top: `${width > 800 ? "20vh" : "15vh"}`,
                 }
               : { display: "none", opacity: "0%" }
           }
