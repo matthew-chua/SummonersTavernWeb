@@ -94,7 +94,8 @@
 
 @media only screen and (max-width: 800px) {
   .text {
-    font-size: 2.5vw;
+    font-size: 6vw;
+    top: 5vh;
   }
 
   .faqIndivContOpen {
@@ -109,11 +110,8 @@
     top: 4vh;
   }
 
-  .text {
-    top: 5vh;
-  }
-
   .answer {
     top: 11vh;
+    font-size: 4vw;
   }
 }

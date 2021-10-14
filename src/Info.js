@@ -22,15 +22,13 @@ export const FAQ_LIST = [
   {
     id: 4,
     question: "What is the total supply?",
-    answer:
-    "A total of 5000 outworlders can be summoned.",
+    answer: "A total of 5000 outworlders can be summoned.",
   },
 
   {
     id: 5,
     question: "What will the mint price be?",
-    answer:
-      "TBA. Check back soon!",
+    answer: "TBA. Check back soon!",
   },
   {
     id: 6,
@@ -41,8 +39,7 @@ export const FAQ_LIST = [
   {
     id: 7,
     question: "When will the public sale be?",
-    answer:
-      "We are aiming for a date in the first 2 weeks of November. ",
+    answer: "We are aiming for a date in the first 2 weeks of November. ",
   },
   {
     id: 8,

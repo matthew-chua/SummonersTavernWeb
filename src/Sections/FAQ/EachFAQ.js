@@ -34,19 +34,17 @@ function EachFAQ({ question, answer }) {
             : { height: "15vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 22) * 2 + 15}vh`,
+              height: `${Math.floor(wordCounter(answer) / 22) * 4 + 17}vh`,
             }
           : { height: "10vh" }
       }
     >
-      
       <span className={classes.text}>{question}</span>
       <FontAwesomeIcon
         icon={faChevronDown}
         className={isOpen ? classes.dropDownButOpen : classes.dropDownBut}
         size={width > 800 ? "2x" : "x"}
       />
-      
 
       {isOpen && (
         <span
@@ -65,7 +63,7 @@ function EachFAQ({ question, answer }) {
           {answer}
         </span>
       )}
-<hr className={classes.line}/>
+      <hr className={classes.line} />
     </div>
   );
 }
