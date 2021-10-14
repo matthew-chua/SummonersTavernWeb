@@ -1,5 +1,4 @@
 .title {
-  font-family: inherit;
   font-weight: 400;
   font-size: 3vw;
   margin-bottom: 5vh;
@@ -13,15 +12,15 @@
 }
 .firstRow {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .secondRow {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 .pic {
-  width: 20vw;
+  width: 12vw;
 }
 .credentials {
   background-color: #ededed;
@@ -52,7 +51,14 @@
   font-style: italic;
 }
 .desc {
+  padding-top: 1rem;
   font-size: 1.4vw;
+  width: 20vw;
+}
+.elder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {

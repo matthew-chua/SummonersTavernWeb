@@ -8,6 +8,8 @@
   justify-content: space-between;
   background-color: #42434b;
   z-index: 999;
+  font-family: 'Eagle Lake', cursive;
+
 }
 .link {
   padding: 1rem;

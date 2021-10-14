@@ -46,9 +46,9 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
           <Intro />
           <Lore />
           {/* <Mission /> */}
+          <CharIntro />
           <Vision />
           {/* <Attributes /> */}
-          <CharIntro />
           <FAQ />
           <Elders />
           {/* <Socials /> */}

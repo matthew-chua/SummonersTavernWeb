@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Lato&family=Sora:wght@700&display=swap');
 
 body {
   margin: 0;
-  font-family: "Lora", sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #e0dacb;
+}
+h1{
+  font-family: 'Eagle Lake', cursive;
 }
 
 code {
