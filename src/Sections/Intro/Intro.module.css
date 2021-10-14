@@ -41,14 +41,14 @@
 
 .mascotCont {
   display: flex;
-  width: 40vw;
+  width: 30vw;
   margin-right: 5vw;
   border-radius: 1rem;
   /* background-color: red; */
   background-color: transparent;
 }
 .mascot {
-  width: 40vw;
+  width: 30vw;
   height: auto;
   /* margin-right: 3vw; */
   border-radius: 1rem;
@@ -58,7 +58,7 @@
 .subtitle {
   font-size: 2vw;
   padding-bottom: 1rem;
-  font-style: italic;
+  font-family: 'Sora', sans-serif;
 }
 
 .counterTextCont {
@@ -240,7 +240,7 @@
   .subtitle {
     font-size: 4vw;
     text-align: center;
-    font-style: italic;
+    font-family: 'Sora', sans-serif;
   }
 
   .counterCont {
@@ -265,6 +265,11 @@
 
   .mediaName {
     font-size: 5vw;
+  }
+  .litePaper:hover {
+    color: #e0dacb;
+    transition: 0.1s ease;
+    transform: scale(1);
   }
 }
 

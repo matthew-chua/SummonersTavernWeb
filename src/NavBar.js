@@ -6,6 +6,8 @@ import classes from "./NavBar.module.css";
 //assets
 import twitter from "./Assets/twitterLogo1.svg";
 import discord from "./Assets/discordLogo.svg";
+import logo from "./Assets/stLogo.png";
+
 
 export default function NavBar() {
   const openLink = (link) => {
@@ -17,7 +19,7 @@ export default function NavBar() {
     <div className={classes.root}>
       <div className={classes.left}>
         <a className={classes.link} href="#home">
-          HOME 
+          <img src={logo} className={classes.logo}/>
         </a>
         <a className={classes.link} href="#lore">
           LORE

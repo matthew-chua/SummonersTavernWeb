@@ -77,7 +77,7 @@ function Intro() {
         <div className={classes.counterTextCont}>
           {width >= 800 && (
             <div className={classes.headerCont}>
-              <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+              <img className={classes.headerImg} src="{STLogo}" alt="ST-Logo" />
             </div>
           )}
           <h1 className={classes.greetings}>Greetings Summoner,</h1>

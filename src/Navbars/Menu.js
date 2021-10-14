@@ -7,6 +7,7 @@ import classes from "./Menu.module.css";
 import twitter from "../Assets/twitterLogo1.svg";
 import discord from "../Assets/discordLogo.svg";
 
+
 function Menu({ menuOpen, setMenuOpen }) {
   const closeMenuHandler = () => {
     setMenuOpen(false);
