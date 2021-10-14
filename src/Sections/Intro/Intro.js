@@ -6,6 +6,7 @@ import moment from "moment";
 // Logos:
 import discordLogo from "../../Assets/discordLogo.svg";
 import twitterLogo from "../../Assets/twitterLogo1.svg";
+import STLogo from "../../Assets/stLogo.png";
 
 // Styles:
 import classes from "./Intro.module.css";
@@ -20,7 +21,7 @@ function Intro() {
     minutes: 0,
     seconds: 0,
   });
-  
+
   const openLink = (link) => {
     const newWindow = window.open(link, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -62,15 +63,18 @@ function Intro() {
   }, [timer]);
   return (
     <div className={classes.introPageCont} id="home">
+      <div className={classes.headerCont}>
+        <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+      </div>
       <div className={classes.topCont}>
         <div className={classes.mascotCont}>
           <img src="" alt="mascot" />
         </div>
         <div className={classes.counterTextCont}>
           <h1 className={classes.greetings}>Greetings Summoner,</h1>
-          <span className={classes.greetingsText}>
-            Welcome to The Summoner's Tavern.
-          </span>
+          {/* <span className={classes.greetingsText}>
+            Countdown to Launch Date:
+          </span> */}
           <div className={classes.counterCont}>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Days</span>

@@ -2,6 +2,8 @@ import React from "react";
 
 import classes from "./ResNavBar.module.css";
 
+import STLogoOnly from "../Assets/STlogoOnly.png";
+
 function ResNavBar({ menuOpen, setMenuOpen }) {
   const menuOnClickHandler = () => {
     setMenuOpen((prevState) => !prevState);
@@ -9,9 +11,14 @@ function ResNavBar({ menuOpen, setMenuOpen }) {
   return (
     <div className={classes.root}>
       <div className={classes.left}>
-        <a className={classes.link} href="Home">
-          Summoner's Tavern
-        </a>
+        {/* <a className={classes.link} href="Home"> */}
+        <img
+          className={classes.stLogo}
+          onClick={() => window.scroll(0, 0)}
+          src={STLogoOnly}
+          alt="ST-Logo"
+        />
+        {/* </a> */}
       </div>
       <div className={classes.rightHam} onClick={menuOnClickHandler}>
         <span

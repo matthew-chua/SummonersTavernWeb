@@ -10,8 +10,19 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
+  padding-top: 17vh;
 }
 
+.headerCont {
+  width: 35rem;
+  height: 15rem;
+}
+
+.headerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .topCont {
   display: flex;
   flex-direction: row;
@@ -35,7 +46,7 @@
 
 .greetings {
   font-size: 3.5vw;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   font-weight: 400;
   font-style: italic;
 }
@@ -113,7 +124,6 @@
   color: #ffffff;
   transition: 0.1s ease;
   transform: scale(1.2);
-
 }
 
 .socialMediaCont {
@@ -148,6 +158,11 @@
 @media screen and (max-width: 600px) {
   .introPageCont {
     /* height: auto; */
+    padding-top: 20vh;
+  }
+  .headerCont {
+    width: 60vw;
+    height: 40vw;
   }
   .topCont {
     flex-direction: column-reverse;
@@ -169,7 +184,7 @@
   }
 
   .greetings {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .greetingsText {
@@ -197,5 +212,15 @@
 
   .mediaName {
     font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .introPageCont {
+    padding-top: 0vh;
+  }
+  .headerCont {
+    width: 50vw;
+    height: 30vw;
   }
 }
