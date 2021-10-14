@@ -1,7 +1,7 @@
 import React from "react";
 
 //assets
-import timeline from "../Assets/timeline.png";
+import timeline from "../Assets/roadmap.png";
 
 //css
 import classes from "./Vision.module.css";
