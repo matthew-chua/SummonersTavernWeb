@@ -17,23 +17,25 @@ export default function NavBar() {
     <div className={classes.root}>
       <div className={classes.left}>
         <a className={classes.link} href="#home">
-          Home
+          HOME 
         </a>
         <a className={classes.link} href="#lore">
-          Lore
+          LORE
         </a>
         {/* <a className={classes.link} href="#attributes">
           Attributes
         </a> */}
         <a className={classes.link} href="#char">
-          Characters
+          OUTWORLDERS
         </a>
-
+        <a className={classes.link} href="#roadmap">
+          ROADMAP
+        </a>
         <a className={classes.link} href="#faq">
           FAQ
         </a>
         <a className={classes.link} href="#elders">
-          Elders
+          ELDERS
         </a>
         {/* <a className={classes.link} href="#socials">
           Socials

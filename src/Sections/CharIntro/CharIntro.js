@@ -4,51 +4,58 @@ import React from "react";
 import classes from "./CharIntro.module.css";
 
 //assets
-import pic from "../../Assets/unknown.png";
+
+import sil5 from "../../Assets/5.png"
+import sil4 from "../../Assets/4.png"
+import sil3 from "../../Assets/3.png"
+import sil2 from "../../Assets/2.png"
+import sil1 from "../../Assets/1.png"
+import post from "../../Assets/post.png";
+
 
 function CharIntro() {
   return (
     <div className={classes.charIntroCont} id="char">
-      <h1 className={classes.title}>CHARACTERS</h1>
+      <h1 className={classes.title}>OUTWORLDERS</h1>
 
       <div className={classes.content}>
         <div className={classes.top}>
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 1 name</h3>
+            <img src={post} className={classes.pic} />
+            <h3>lilith</h3>
             <p>description here, lorem ipsum blah blah </p>
           </div>
 
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 2 name</h3>
-            <p>description here, lorem ipsum blah blah </p>
+            <img src={sil1} className={classes.pic} />
+            <h3>?</h3>
+            <p>???</p>
           </div>
 
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 3 name</h3>
-            <p>description here, lorem ipsum blah blah </p>
+            <img src={sil2} className={classes.pic} />
+            <h3>?</h3>
+            <p>???</p>
           </div>
         </div>
 
         <div className={classes.bottom}>
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 1 name</h3>
-            <p>description here, lorem ipsum blah blah </p>
+            <img src={sil3} className={classes.pic} />
+            <h3>?</h3>
+            <p>???</p>
           </div>
 
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 2 name</h3>
-            <p>description here, lorem ipsum blah blah </p>
+            <img src={sil4} className={classes.pic} />
+            <h3>?</h3>
+            <p>???</p>
           </div>
 
           <div className={classes.char}>
-            <img src={pic} className={classes.pic} />
-            <h3>char 3 name</h3>
-            <p>description here, lorem ipsum blah blah </p>
+            <img src={sil5} className={classes.pic} />
+            <h3>?</h3>
+            <p>???</p>
           </div>
         </div>
       </div>

@@ -98,15 +98,16 @@ function Intro() {
       </div>
       <div className={classes.bottomCont}>
         <button
-          onClick={() =>
-            openLink(
-              "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
-            )
-          }
+          // onClick={() =>
+          //   openLink(
+          //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
+          //   )
+          // }
           className={classes.litePaper}
         >
           LITEPAPER
         </button>
+        <p>Coming Soon!</p>
         {/* <div className={classes.socialMediaCont}>
           <button
             onClick={() => openLink("https://discord.gg/zATSbfzx")}

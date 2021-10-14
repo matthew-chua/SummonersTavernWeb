@@ -48,7 +48,7 @@
   font-size: 3.5vw;
   margin-bottom: 70px;
   font-weight: 400;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .greetingsText {
@@ -93,6 +93,7 @@
 .time {
   font-size: 3.5vw;
   margin-top: 1.5vh;
+  font-family: 'Eagle Lake', cursive;
 }
 
 .bottomCont {
@@ -101,6 +102,7 @@
   width: 90%;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .litePaper {
