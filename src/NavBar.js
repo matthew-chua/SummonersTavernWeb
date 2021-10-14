@@ -44,7 +44,7 @@ export default function NavBar() {
       <div className={classes.right}>
         <img
           src={discord}
-          onClick={() => openLink("https://twitter.com/SummonersTavern")}
+          onClick={() => openLink("https://discord.gg/DhZ4mRKh3U")}
           className={classes.icon}
         />
         <img
