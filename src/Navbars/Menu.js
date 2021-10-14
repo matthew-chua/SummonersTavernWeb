@@ -93,7 +93,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                 <img
                   src={discord}
                   onClick={() =>
-                    openLink("https://twitter.com/SummonersTavern")
+                    openLink("https://discord.gg/DhZ4mRKh3U")
                   }
                   className={classes.icon}
                 />
