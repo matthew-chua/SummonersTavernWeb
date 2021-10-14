@@ -24,20 +24,31 @@
   margin-bottom: 5vh;
 }
 .pic{
-  width: 12vw;
+  width: 30vw;
 }
 .char{
-  width: 15vw;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .top{
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 .bottom{
   display: flex;
   padding-top: 3rem;
   flex-direction: row;
   
+}
+.name{
+  padding-top: 1rem;
+}
+
+.desc{
+  width: 20vw;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,19 +57,27 @@
   }
   .top{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+
   }
   .bottom{
     flex-direction: column;
     padding-top: 0rem;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+
   }
   .title {
     font-size: 8.5vw;
   }
   .char{
-    width: 50vw;
+    width: 100vw;
     padding-bottom: 2rem;
   }
   .pic{
-    width: 50vw;
+    width: 100vw;
   }
 }

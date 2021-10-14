@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import classes from "./EachFAQ.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // Custom Hook:
 import useWindowDimensions from "../../useWindowDimensions";
@@ -39,12 +39,14 @@ function EachFAQ({ question, answer }) {
           : { height: "10vh" }
       }
     >
+      
       <span className={classes.text}>{question}</span>
       <FontAwesomeIcon
-        icon={faChevronCircleDown}
+        icon={faChevronDown}
         className={isOpen ? classes.dropDownButOpen : classes.dropDownBut}
-        size={width > 800 ? "4x" : "2x"}
+        size={width > 800 ? "2x" : "x"}
       />
+      
 
       {isOpen && (
         <span
@@ -63,6 +65,7 @@ function EachFAQ({ question, answer }) {
           {answer}
         </span>
       )}
+<hr className={classes.line}/>
     </div>
   );
 }

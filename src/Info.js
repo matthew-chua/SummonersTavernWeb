@@ -52,7 +52,7 @@ export const FAQ_LIST = [
   },
   {
     id: 9,
-    question: "What is the roadmap fo the Tavern going forward?",
+    question: "What is the roadmap of the Tavern going forward?",
     answer:
       "A significant portion of the plans for Tavern is intertwined with our plans for 4Q labs, which can be found in our roadmap and whitepaper that are on summoners.io. ",
   },

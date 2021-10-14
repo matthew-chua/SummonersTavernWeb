@@ -4,7 +4,7 @@ import moment from "moment";
 // import { Link } from "react-router-dom";
 
 // assets
-import heads from "../../Assets/mascot.png";
+import heads from "../../Assets/NFT.jpg";
 import STLogo from "../../Assets/stLogo.png";
 
 // Custom Hooks:
@@ -104,10 +104,7 @@ function Intro() {
               <span className={classes.time}>{timer?.seconds}</span>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={classes.bottomCont}>
-        <button
+          <button
           // onClick={() =>
           //   openLink(
           //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
@@ -117,35 +114,12 @@ function Intro() {
         >
           LITEPAPER
         </button>
-        <p>Coming Soon!</p>
-        {/* <div className={classes.socialMediaCont}>
-          <button
-            onClick={() => openLink("https://discord.gg/zATSbfzx")}
-            className={classes.mediaGroup}
-          >
-             <div className={classes.smImgCont}> 
-            <img
-              className={classes.smImg}
-              src={discordLogo}
-              alt="discord-logo"
-            />
-            </div>
-            <span className={classes.mediaName}>Discord</span>
-          </button>
-          <button
-            onClick={() => openLink("https://twitter.com/SummonersTavern")}
-            className={classes.mediaGroup}
-          >
-            <div className={classes.smImgCont}>{" "}
-            <img
-              className={classes.smImg}
-              src={twitterLogo}
-              alt="twitter-logo"
-            />
-            </div>
-            <span className={classes.mediaName}>Twitter</span>
-          </button>
-        </div> */}
+        <p className={classes.smallText}>Coming Soon!</p>
+        </div>
+      </div>
+      <div className={classes.bottomCont}>
+
+        
       </div>
     </div>
   );

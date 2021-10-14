@@ -18,6 +18,9 @@ import Vision from "./Sections/Vision";
 // Custom Hook:
 import useWindowDimensions from "./useWindowDimensions";
 
+//css
+import classes from "./LandingPage.module.css";
+
 export default function LandingPage({ menuOpen, setMenuOpen }) {
   // const [menuOpen, setMenuOpen] = useState(false);
 
@@ -32,25 +35,38 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
   return (
     <div>
       {width > 800 && <NavBar />}
-      {/* {width <= 800 && (
-        <>
-          <ResNavBar menuOpen={menuOpen} setMenuOopen={setMenuOpen} />
-          <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "}
-        </>
-      )} */}
-      <Fade bottom>
-        <div>
+
+      <Fade duration="2000">
+        
           <Intro />
+      </Fade>
+      <Fade duration="2000">
+
           <Lore />
+          </Fade>
+
           {/* <Mission /> */}
+          <Fade duration="2000">
+
           <CharIntro />
+          </Fade>
+          <Fade duration="2000">
+
           <Vision />
           {/* <Attributes /> */}
+          </Fade>
+          <Fade duration="2000">
+
           <FAQ />
+          </Fade>
+          <Fade duration="2000">
+
           <Elders />
+          </Fade>
+
           {/* <Socials /> */}
-        </div>
-      </Fade>
+          <p className={classes.footer}>&#169; 2021 4Q Labs.</p>
+        
     </div>
   );
 }

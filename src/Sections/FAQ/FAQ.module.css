@@ -91,3 +91,8 @@
   padding-right: 5%;
   font-size: 1.5vw;
 }
+@media only screen and (max-width: 800px) {
+  .title {
+      font-size: 8vw;
+    }
+}

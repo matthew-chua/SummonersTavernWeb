@@ -16,16 +16,19 @@
 
 .headerCont {
   width: 40rem;
-  height: 15rem;
+  /* height: 15rem; */
   display: flex;
   justify-content: center;
   /* margin-bottom: 2rem; */
+  padding-top: ;
 }
 
 .headerImg {
   /* height: 100%; */
-  width: 40vw;
-  object-fit: cover;
+  width: 30vw;
+  height: auto;
+  
+  /* object-fit: cover; */
 }
 .topCont {
   display: flex;
@@ -33,12 +36,19 @@
   width: 90%;
   max-width: 100rem;
   justify-content: space-around;
+  padding-top: 1rem;
 }
 
 .mascotCont {
   display: flex;
   width: 40vw;
   /* background-color: red; */
+}
+.mascot {
+  width: 40vw;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 18px 5px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 5px 18px 5px rgba(0, 0, 0, 0.78);
 }
 .subtitle {
   font-size: 2vw;
@@ -54,8 +64,8 @@
 }
 
 .greetings {
-  font-size: 3.5vw;
-  margin-bottom: 70px;
+  font-size: 3vw;
+  margin-bottom: 2rem;
   font-weight: 400;
   /* font-style: italic; */
 }
@@ -65,6 +75,9 @@
   margin-bottom: 40px;
   color: #ffffff;
   font-style: italic;
+}
+.smallText{
+  text-align: center;
 }
 
 .counterCont {
@@ -115,13 +128,14 @@
 }
 
 .litePaper {
-  font-size: 4vw;
+  font-size: 3vw;
   text-decoration: none;
   color: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-family: inherit;
+  font-family: "Eagle Lake", cursive;
+
   /* border: none; */
   transition: 0.1s ease-in;
   -o-transition: 0.1s ease-in;
@@ -129,6 +143,7 @@
   -moz-transition: 0.1s ease-in;
   -webkit-transition: 0.1s ease-in;
   transform: scale(1);
+  padding-top: 1.5rem;
 }
 
 .litePaper:hover {

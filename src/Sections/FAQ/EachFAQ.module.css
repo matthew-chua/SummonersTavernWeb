@@ -11,7 +11,7 @@
   /* height: 15vh; */
   display: flex;
   position: relative;
-  border: 1px solid #ededed;
+  /* border: 1px solid #ededed; */
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -19,7 +19,7 @@
 
 .faqIndivCont:hover {
   border-color: #ffff;
-  border: 2px solid #ffff;
+  /* border: 2px solid #ffff; */
   transition: all 0.2s ease;
 }
 
@@ -28,7 +28,7 @@
   /* height: 40vh; */
   display: flex;
   position: relative;
-  border: 1px solid #ffff;
+  /* border: 1px solid #ffff; */
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -46,6 +46,9 @@
   transition: all 0.3s ease;
   text-align: left;
 }
+.text:hover {
+  color: orange;
+}
 
 .dropDownBut {
   position: absolute;
@@ -53,6 +56,9 @@
   transform: translateY(-50%);
   right: 5%;
   transition: all 0.2s ease;
+}
+.dropDownBut:hover {
+  color: orange;
 }
 
 .dropDownButOpen {
@@ -62,6 +68,9 @@
   right: 5%;
   transition: all 0.2s ease;
 }
+.dropDownButOpen:hover {
+  color: orange;
+}
 
 .answer {
   position: absolute;
@@ -70,6 +79,17 @@
   text-align: left;
   padding-right: 5%;
   font-size: 1.5vw;
+}
+.line {
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  size: 3;
 }
 
 @media only screen and (max-width: 800px) {
