@@ -20,7 +20,6 @@
   display: flex;
   justify-content: center;
   /* margin-bottom: 2rem; */
-  
 }
 
 .headerImg {
@@ -124,7 +123,6 @@
   margin-top: 1.5vh;
   font-family: "Eagle Lake", cursive;
   color: orange;
-
 }
 
 .bottomCont {
@@ -211,16 +209,27 @@
     text-align: center;
     /* padding: 0 10vw 0 10vw; */
     align-items: center;
+    justify-content: center;
   }
 
   .counterTextCont {
     margin-bottom: 2rem;
+    width: 70vw;
   }
 
   .mascotCont {
     width: 70vw;
+    margin-right: 0;
     /* height: auto; */
     /* height: 40vh; */
+  }
+
+  .timeHeader {
+    font-size: 3vw;
+  }
+
+  .time {
+    font-size: 6vw;
   }
 
   .mascot {
@@ -231,7 +240,7 @@
 
   .greetings {
     font-size: 6vw;
-    transform: translateX(-12.5%);
+    /* transform: translateX(-12.5%); */
     width: 80vw;
     flex-wrap: nowrap;
     margin-bottom: 5vh;
@@ -244,19 +253,14 @@
   }
 
   .counterCont {
-    width: 70%;
-    margin-left: 15%;
-  }
-
-  .bottomCont {
-    margin-top: 3vh;
-    flex-direction: column;
-    align-items: center;
+    width: 70vw;
+    /* flex-direction: column */
+    /* align-items: center; */
   }
 
   .litePaper {
     font-size: 9vw;
-    transform: translateX(-12.5%);
+    /* transform: translateX(-12.5%); */
   }
 
   .socialMediaCont {

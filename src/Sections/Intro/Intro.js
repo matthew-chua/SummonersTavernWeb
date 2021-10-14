@@ -65,11 +65,11 @@ function Intro() {
   }, [timer]);
   return (
     <div className={classes.introPageCont} id="home">
-      {width < 800 && (
+      {/* {width < 800 && (
         <div className={classes.headerCont}>
           <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
         </div>
-      )}
+      )} */}
       <div className={classes.topCont}>
         <div className={classes.mascotCont}>
           <img src={heads} alt="mascot" className={classes.mascot} />
@@ -105,22 +105,19 @@ function Intro() {
             </div>
           </div>
           <button
-          // onClick={() =>
-          //   openLink(
-          //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
-          //   )
-          // }
-          className={classes.litePaper}
-        >
-          LITEPAPER
-        </button>
-        <p className={classes.smallText}>Coming Soon!</p>
+            // onClick={() =>
+            //   openLink(
+            //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
+            //   )
+            // }
+            className={classes.litePaper}
+          >
+            LITEPAPER
+          </button>
+          <p className={classes.smallText}>Coming Soon!</p>
         </div>
       </div>
-      <div className={classes.bottomCont}>
-
-        
-      </div>
+      <div className={classes.bottomCont}></div>
     </div>
   );
 }

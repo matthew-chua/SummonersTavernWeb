@@ -34,7 +34,7 @@ function EachFAQ({ question, answer }) {
             : { height: "15vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 10) * 3 + 20}vh`,
+              height: `${Math.floor(wordCounter(answer) / 10) * 4 + 20}vh`,
             }
           : { height: "10vh" }
       }

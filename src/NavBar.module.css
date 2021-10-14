@@ -8,8 +8,7 @@
   justify-content: space-between;
   background-color: #373737;
   z-index: 999;
-  font-family: 'Sora', sans-serif;
-
+  font-family: "Sora", sans-serif;
 }
 .link {
   padding: 1rem;
@@ -46,6 +45,6 @@
 .icon:hover {
   transform: scale(1.1);
 }
-.logo{
+.logo {
   width: 10vw;
 }

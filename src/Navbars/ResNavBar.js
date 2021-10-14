@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./ResNavBar.module.css";
 
 import STLogoOnly from "../Assets/STlogoOnly.png";
+import STLogo from "../Assets/stLogo.png";
 
 function ResNavBar({ menuOpen, setMenuOpen }) {
   const menuOnClickHandler = () => {
@@ -15,7 +16,7 @@ function ResNavBar({ menuOpen, setMenuOpen }) {
         <img
           className={classes.stLogo}
           onClick={() => window.scroll(0, 0)}
-          src={STLogoOnly}
+          src={STLogo}
           alt="ST-Logo"
         />
         {/* </a> */}
