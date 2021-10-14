@@ -43,6 +43,7 @@
 }
 .name {
   padding-top: 1rem;
+  color: orange;
 }
 
 .desc {
@@ -80,5 +81,6 @@
 
   .desc {
     width: 60vw;
+    font-style: italic;
   }
 }

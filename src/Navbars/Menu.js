@@ -50,9 +50,20 @@ function Menu({ menuOpen, setMenuOpen }) {
                 data-text="Characters"
                 onClick={closeMenuHandler}
               >
-                Characters
+                Outworlders
               </a>
             </li>
+            <li className={classes.li}>
+              <a
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
+                href="#vision"
+                data-text="vision"
+                onClick={closeMenuHandler}
+              >
+                Roadmap
+              </a>
+            </li>
+            
             <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
