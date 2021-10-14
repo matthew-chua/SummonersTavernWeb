@@ -14,10 +14,30 @@ function EachFAQ({ question, answer }) {
 
   // Getting width:
   const { height, width } = useWindowDimensions();
+
+  // Counting number of words:
+  const wordCounter = (string) => {
+    return string.split(" ").length;
+  };
   return (
     <div
       onClick={() => setIsOpen((prevState) => !prevState)}
       className={isOpen ? classes.faqIndivContOpen : classes.faqIndivCont}
+      style={
+        width > 800
+          ? isOpen
+            ? {
+                height: `${
+                  Math.floor(wordCounter(answer) / 18) * 2 + 20 + 15
+                }vh`,
+              }
+            : { height: "15vh" }
+          : isOpen
+          ? {
+              height: `${Math.floor(wordCounter(answer) / 18) * 2 + 20}vh`,
+            }
+          : { height: "15vh" }
+      }
     >
       <span className={classes.text}>{question}</span>
       <FontAwesomeIcon
@@ -34,6 +54,7 @@ function EachFAQ({ question, answer }) {
                   display: "flex",
                   opacity: "100%",
                   transition: "all 0.3s ease",
+                  top: `${width > 800 ? "20vh" : "15vh"}`,
                 }
               : { display: "none", opacity: "0%" }
           }
