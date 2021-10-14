@@ -1,0 +1,49 @@
+.root{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.left{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pic{
+    width: 40vw;
+}
+.logo{
+
+}
+
+.timeHeadersCont{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.75vw;
+}
+.counterCont{
+    display: flex;
+    
+}
+.time{
+    font-family: 'Eagle Lake', cursive;
+    font-size: 4vw;
+}
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    padding-bottom: 3rem;
+}

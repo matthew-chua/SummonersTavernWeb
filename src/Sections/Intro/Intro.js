@@ -3,9 +3,8 @@ import { useHistory } from "react-router";
 import moment from "moment";
 // import { Link } from "react-router-dom";
 
-// Logos:
-import discordLogo from "../../Assets/discordLogo.svg";
-import twitterLogo from "../../Assets/twitterLogo1.svg";
+// assets
+import heads from "../../Assets/mascot.png";
 import STLogo from "../../Assets/stLogo.png";
 
 // Styles:
@@ -15,18 +14,17 @@ const LAUNCH_DATE = moment([2021, 11, 15, 7, 0, 0]).valueOf();
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
+  const openLink = (link) => {
+    const newWindow = window.open(link, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   const [timer, setTimer] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
-
-  const openLink = (link) => {
-    const newWindow = window.open(link, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
-
   useEffect(() => {
     let now = new Date().valueOf();
     console.log(now);
@@ -63,15 +61,19 @@ function Intro() {
   }, [timer]);
   return (
     <div className={classes.introPageCont} id="home">
-      <div className={classes.headerCont}>
-        <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
-      </div>
       <div className={classes.topCont}>
+        {/* <div className={classes.headerCont}>
+            <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+          </div> */}
         <div className={classes.mascotCont}>
-          <img src="" alt="mascot" />
+          <img src={heads} alt="mascot" className={classes.mascot}/>
         </div>
         <div className={classes.counterTextCont}>
+          <div className={classes.headerCont}>
+            <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
+          </div>
           <h1 className={classes.greetings}>Greetings Summoner,</h1>
+          <p className={classes.subtitle}>Next summoning in...</p>
           {/* <span className={classes.greetingsText}>
             Countdown to Launch Date:
           </span> */}
