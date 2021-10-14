@@ -39,14 +39,12 @@ function EachFAQ({ question, answer }) {
           : { height: "10vh" }
       }
     >
-      
       <span className={classes.text}>{question}</span>
       <FontAwesomeIcon
         icon={faChevronDown}
         className={isOpen ? classes.dropDownButOpen : classes.dropDownBut}
         size={width > 800 ? "2x" : "x"}
       />
-      
 
       {isOpen && (
         <span
@@ -65,7 +63,7 @@ function EachFAQ({ question, answer }) {
           {answer}
         </span>
       )}
-<hr className={classes.line}/>
+      <hr className={classes.line} />
     </div>
   );
 }

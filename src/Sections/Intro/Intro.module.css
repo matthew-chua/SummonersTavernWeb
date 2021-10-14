@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   /* margin-bottom: 2rem; */
-  padding-top: ;
+  
 }
 
 .headerImg {
@@ -67,6 +67,7 @@
   font-size: 3vw;
   margin-bottom: 2rem;
   font-weight: 400;
+  color: orange;
   /* font-style: italic; */
 }
 
@@ -116,6 +117,8 @@
   font-size: 3.5vw;
   margin-top: 1.5vh;
   font-family: "Eagle Lake", cursive;
+  color: orange;
+
 }
 
 .bottomCont {
@@ -147,7 +150,7 @@
 }
 
 .litePaper:hover {
-  color: #ffffff;
+  color: orange;
   transition: 0.1s ease;
   transform: scale(1.2);
 }

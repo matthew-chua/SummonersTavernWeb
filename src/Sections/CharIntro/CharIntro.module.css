@@ -44,6 +44,7 @@
 }
 .name{
   padding-top: 1rem;
+  color: orange;
 }
 
 .desc{
@@ -79,5 +80,9 @@
   }
   .pic{
     width: 100vw;
+  }
+  .desc{
+    width: 70vw;
+    font-style: italic;
   }
 }
