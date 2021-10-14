@@ -45,13 +45,13 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
         <div className={classes.root}>
           <Intro />
           <Lore />
-          <Mission />
+          {/* <Mission /> */}
           <Vision />
-          <Attributes />
+          {/* <Attributes /> */}
           <CharIntro />
           <FAQ />
           <Elders />
-          <Socials />
+          {/* <Socials /> */}
         </div>
       </Fade>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 //assets
 import timeline from "../Assets/timeline.png";
@@ -7,10 +7,10 @@ import timeline from "../Assets/timeline.png";
 import classes from "./Vision.module.css";
 
 export default function Vision() {
-    return (
-        <div className={classes.root}>
-            <h1 className={classes.title}>VISION</h1>
-            <img src={timeline} className={classes.pic}/>
-        </div>
-    )
+  return (
+    <div className={classes.root}>
+      <h1 className={classes.title}>ROADMAP</h1>
+      <img src={timeline} className={classes.pic} />
+    </div>
+  );
 }

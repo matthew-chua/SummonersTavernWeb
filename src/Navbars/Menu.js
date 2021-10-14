@@ -3,9 +3,18 @@ import React from "react";
 // Styles:
 import classes from "./Menu.module.css";
 
+//assets
+import twitter from "../Assets/twitterLogo1.svg";
+import discord from "../Assets/discordLogo.svg";
+
 function Menu({ menuOpen, setMenuOpen }) {
   const closeMenuHandler = () => {
     setMenuOpen(false);
+  };
+
+  const openLink = (link) => {
+    const newWindow = window.open(link, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
   };
   return (
     <div className={`${classes.menu} ${menuOpen && classes.menuActive}`}>
@@ -34,7 +43,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                 Lore
               </a>
             </li>
-            <li className={classes.li}>
+            {/* <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#attributes"
@@ -43,7 +52,7 @@ function Menu({ menuOpen, setMenuOpen }) {
               >
                 Attributes
               </a>
-            </li>
+            </li> */}
             <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
@@ -75,14 +84,30 @@ function Menu({ menuOpen, setMenuOpen }) {
               </a>
             </li>
             <li className={classes.li}>
-              <a
+              {/* <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
                 href="#socials"
                 data-text="Socials"
                 onClick={closeMenuHandler}
               >
                 Socials
-              </a>
+              </a> */}
+              <div className={classes.socials}>
+                <img
+                  src={discord}
+                  onClick={() =>
+                    openLink("https://twitter.com/SummonersTavern")
+                  }
+                  className={classes.icon}
+                />
+                <img
+                  src={twitter}
+                  onClick={() =>
+                    openLink("https://twitter.com/SummonersTavern")
+                  }
+                  className={classes.icon}
+                />
+              </div>
             </li>
           </ul>
         </section>

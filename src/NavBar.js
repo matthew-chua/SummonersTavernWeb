@@ -22,22 +22,22 @@ export default function NavBar() {
         <a className={classes.link} href="#lore">
           Lore
         </a>
-        <a className={classes.link} href="#attributes">
+        {/* <a className={classes.link} href="#attributes">
           Attributes
-        </a>
+        </a> */}
         <a className={classes.link} href="#char">
           Characters
         </a>
-        
+
         <a className={classes.link} href="#faq">
           FAQ
         </a>
         <a className={classes.link} href="#elders">
           Elders
         </a>
-        <a className={classes.link} href="#socials">
+        {/* <a className={classes.link} href="#socials">
           Socials
-        </a>
+        </a> */}
       </div>
       <div className={classes.right}>
         <img
