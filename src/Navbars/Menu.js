@@ -92,7 +92,11 @@ function Menu({ menuOpen, setMenuOpen }) {
               >
                 Socials
               </a> */}
-              <div className={classes.socials}>
+              <div
+                className={`${classes.socials} ${
+                  menuOpen && classes.socialsOpen
+                }`}
+              >
                 <img
                   src={discord}
                   onClick={() =>

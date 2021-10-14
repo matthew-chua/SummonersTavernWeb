@@ -84,10 +84,11 @@
   opacity: 1;
 }
 
-.social {
+.socials {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   width: 20vw;
+  opacity: 0;
 }
 
 .icon {
@@ -120,7 +121,8 @@
   transition: opacity 0.4s ease 0.4;
 }
 
-.aActive {
+.aActive,
+.socialsOpen {
   transform: translateX(0);
   opacity: 1;
   cursor: pointer;
