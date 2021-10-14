@@ -28,13 +28,13 @@ function EachFAQ({ question, answer }) {
           ? isOpen
             ? {
                 height: `${
-                  Math.floor(wordCounter(answer) / 18) * 2 + 20 + 15
+                  Math.floor(wordCounter(answer) / 15) * 2 + 20 + 15
                 }vh`,
               }
             : { height: "15vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 18) * 2 + 20}vh`,
+              height: `${Math.floor(wordCounter(answer) / 20) * 2 + 20}vh`,
             }
           : { height: "15vh" }
       }

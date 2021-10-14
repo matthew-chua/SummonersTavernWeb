@@ -43,16 +43,6 @@ function Menu({ menuOpen, setMenuOpen }) {
                 Lore
               </a>
             </li>
-            {/* <li className={classes.li}>
-              <a
-                className={`${menuOpen && classes.aActive} ${classes.a}`}
-                href="#attributes"
-                data-text="attributes"
-                onClick={closeMenuHandler}
-              >
-                Attributes
-              </a>
-            </li> */}
             <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
@@ -84,14 +74,6 @@ function Menu({ menuOpen, setMenuOpen }) {
               </a>
             </li>
             <li className={classes.li}>
-              {/* <a
-                className={`${menuOpen && classes.aActive} ${classes.a}`}
-                href="#socials"
-                data-text="Socials"
-                onClick={closeMenuHandler}
-              >
-                Socials
-              </a> */}
               <div
                 className={`${classes.socials} ${
                   menuOpen && classes.socialsOpen

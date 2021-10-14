@@ -8,14 +8,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   justify-content: center;
-  padding-top: 17vh;
+  padding-top: 100px;
+  margin-bottom: 10vh;
 }
 
 .headerCont {
-  width: 35rem;
+  width: 40rem;
   height: 15rem;
+  margin-bottom: 2rem;
 }
 
 .headerImg {
@@ -93,7 +95,7 @@
 .time {
   font-size: 3.5vw;
   margin-top: 1.5vh;
-  font-family: 'Eagle Lake', cursive;
+  font-family: "Eagle Lake", cursive;
 }
 
 .bottomCont {
@@ -157,14 +159,15 @@
   margin-left: 0.5vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .introPageCont {
     /* height: auto; */
-    padding-top: 20vh;
+    padding-top: 100px;
   }
   .headerCont {
     width: 60vw;
     height: 40vw;
+    margin-bottom: 0;
   }
   .topCont {
     flex-direction: column-reverse;
@@ -217,7 +220,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+/* @media only screen and (min-width: 600px) and (max-width: 800px) {
   .introPageCont {
     padding-top: 0vh;
   }
@@ -225,4 +228,4 @@
     width: 50vw;
     height: 30vw;
   }
-}
+} */

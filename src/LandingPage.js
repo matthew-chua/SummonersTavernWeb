@@ -15,9 +15,6 @@ import { Fade } from "react-reveal";
 import Mission from "./Sections/Mission";
 import Vision from "./Sections/Vision";
 
-//css
-import classes from "./LandingPage.module.css";
-
 // Custom Hook:
 import useWindowDimensions from "./useWindowDimensions";
 
@@ -42,7 +39,7 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
         </>
       )} */}
       <Fade bottom>
-        <div className={classes.root}>
+        <div>
           <Intro />
           <Lore />
           {/* <Mission /> */}

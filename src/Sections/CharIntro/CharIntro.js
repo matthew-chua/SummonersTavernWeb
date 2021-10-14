@@ -5,13 +5,12 @@ import classes from "./CharIntro.module.css";
 
 //assets
 
-import sil5 from "../../Assets/5.png"
-import sil4 from "../../Assets/4.png"
-import sil3 from "../../Assets/3.png"
-import sil2 from "../../Assets/2.png"
-import sil1 from "../../Assets/1.png"
+import sil5 from "../../Assets/5.png";
+import sil4 from "../../Assets/4.png";
+import sil3 from "../../Assets/3.png";
+import sil2 from "../../Assets/2.png";
+import sil1 from "../../Assets/1.png";
 import post from "../../Assets/post.png";
-
 
 function CharIntro() {
   return (
