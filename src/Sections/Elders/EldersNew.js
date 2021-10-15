@@ -74,7 +74,7 @@ export default function EldersNew() {
           <img
             src={skull}
             className={classes.pic}
-            onClick={() => openLink("https://twitter.com/sol_cypher")}
+            
           />
           <p className={classes.desc}>I really really REALLY love coding.</p>
         </div>
@@ -84,7 +84,7 @@ export default function EldersNew() {
           <img
             src={bird}
             className={classes.pic}
-            onClick={() => openLink("https://twitter.com/SOL_Cheeezzyyyy")}
+            
           />
           <p className={classes.desc}>
             Degenerate aspiring to be a professional blockchain developer.
