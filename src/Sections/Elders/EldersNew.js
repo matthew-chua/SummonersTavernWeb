@@ -73,17 +73,17 @@ export default function EldersNew() {
           <p className={classes.nameTitle}>Web Dev</p>
           <img
             src={skull}
-            className={classes.pic}
+            className={classes.devpic}
             
           />
           <p className={classes.desc}>I really really REALLY love coding.</p>
         </div>
         <div className={classes.elder}>
           <p className={classes.name}>Cheeezzyyyy</p>
-          <p className={classes.nameTitle}>Solana Dev</p>
+          <p className={classes.nameTitle}>In-house Solana Dev</p>
           <img
             src={bird}
-            className={classes.pic}
+            className={classes.devpic}
             
           />
           <p className={classes.desc}>
