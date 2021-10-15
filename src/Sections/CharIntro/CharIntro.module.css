@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin: 10vh 0 10vh 0;
+  margin: 15vh 0 10vh 0;
   /* height: 100vh; */
   padding-top: 6rem;
 }
@@ -45,7 +45,7 @@
 .name {
   padding-top: 1rem;
   color: orange;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 2rem;
 }
 

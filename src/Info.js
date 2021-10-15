@@ -6,7 +6,6 @@ export const FAQ_LIST = [
     question: "What is Summoner's Tavern?",
     answer: [
       "Long in search of a trustworthy companion, you can toss a coin into the Tavern's portal and summon an Outworlder for your adventures. You will become a member of the Tavern and your outworlder will be essential in this metaverse.",
-      "                                                            The Tavern seeks to provide a space for NFT enthusiasts and digital art collectors to meet like-minded people and be a part of a community that is active and genuine. For us, a successful project should excel in these aspects: Community, Artwork and Future Plans. For more details, please refer to our roadmap and whitepaper (on the website and our discord).",
     ],
   },
   {
@@ -14,22 +13,22 @@ export const FAQ_LIST = [
     question: "What makes this project different from other NFT projects? ",
     answer: [
       "A project initiative by 4Q Labs, our ultimate goal is to show off the work of underrepresented artists who have great talent, and strive to add artistic value to the Solana NFT space.",
-      "All in all, we want this project to be a stepping stone for our future plans, as well as for it to be a genesis piece that is a cornerstone of the ecosystem that we envision.",
     ],
   },
   {
     id: 3,
     question: "What is an outworlder and what can I do with one?",
     answer: [
-      "There will be more than 5 different types of outworlders that can be summoned.",
-      "We are currently planning on what you could do with the outworlders, with many ideas and concepts on our drawing boards.",
-      "However, as we are a team that places an emphasis on the artistic aspects, we feel that giving supporters of the Tavern exclusive access to the incubator we are building is the best approach.",
+      "An Outworlder is a being hailing from multiple different realms, called upon by a summoner through a portal and contracted by coins that are converted into their native currency. ",
+      "WSummoning an outworlder will enable the team to develop a wider range of art for the Solana NFT Space. All summoners will also gain exclusive access to the Tavern community and new artworks in the future.",
     ],
   },
   {
     id: 4,
     question: "What is the total supply?",
-    answer: ["A total of 5000 outworlders can be summoned."],
+    answer: [
+      "As each summoning consumes massive amounts of energy from both worlds, only 5000 outworlders can be summoned.",
+    ],
   },
 
   {

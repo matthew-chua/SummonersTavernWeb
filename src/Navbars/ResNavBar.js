@@ -2,10 +2,12 @@ import React from "react";
 
 import classes from "./ResNavBar.module.css";
 
-
 import STLogo from "../Assets/logoMobile.png";
 
+import useWindowDimensions from "../useWindowDimensions";
+
 function ResNavBar({ menuOpen, setMenuOpen }) {
+  const { height, width } = useWindowDimensions();
   const menuOnClickHandler = () => {
     setMenuOpen((prevState) => !prevState);
   };
@@ -13,12 +15,14 @@ function ResNavBar({ menuOpen, setMenuOpen }) {
     <div className={classes.root}>
       <div className={classes.left}>
         {/* <a className={classes.link} href="Home"> */}
-        <img
-          className={classes.stLogo}
-          onClick={() => window.scroll(0, 0)}
-          src={STLogo}
-          alt="ST-Logo"
-        />
+        {width < 800 && (
+          <img
+            className={classes.stLogo}
+            onClick={() => window.scroll(0, 0)}
+            src={STLogo}
+            alt="ST-Logo"
+          />
+        )}
         {/* </a> */}
       </div>
       <div className={classes.rightHam} onClick={menuOnClickHandler}>
