@@ -107,11 +107,11 @@ function Intro() {
           {width > 800 && (
             <>
               <button
-                // onClick={() =>
-                //   openLink(
-                //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
-                //   )
-                // }
+                onClick={() =>
+                  openLink(
+                    "https://summoners-tavern.gitbook.io/summoners-tavern-whitepaper-x/introduction/what-is-this-project-about"
+                  )
+                }
                 className={classes.litePaper}
               >
                 LITEPAPER
@@ -125,11 +125,11 @@ function Intro() {
         {width <= 800 && (
           <>
             <button
-              // onClick={() =>
-              //   openLink(
-              //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
-              //   )
-              // }
+              onClick={() =>
+                openLink(
+                  "https://summoners-tavern.gitbook.io/summoners-tavern-whitepaper-x/introduction/what-is-this-project-about"
+                )
+              }
               className={classes.litePaper}
             >
               LITEPAPER
