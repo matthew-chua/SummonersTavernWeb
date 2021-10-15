@@ -17,6 +17,7 @@
 .img{
   width: 70vw;
   border-radius: 1rem;
+  max-width: 1000px;
   
 }
 

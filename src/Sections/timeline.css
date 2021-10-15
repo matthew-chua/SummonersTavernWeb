@@ -244,6 +244,7 @@
     font-size: 14px;
     font-size: 0.875rem;
   }
+
 }
 @media only screen and (min-width: 1170px) {
   .vertical-timeline--two-columns .vertical-timeline-element-content {
@@ -267,6 +268,7 @@
     font-size: 16px;
     font-size: 1rem;
   }
+
 
   .vertical-timeline--two-columns
     .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
@@ -345,6 +347,10 @@
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
+  }
+  .vertical-timeline-element-title {
+    
+    font-size: 4vw;
   }
 }
 

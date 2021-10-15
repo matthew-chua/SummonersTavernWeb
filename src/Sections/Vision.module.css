@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 6rem;
+  padding-top: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .title {
@@ -22,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
 }
+.done{
+    text-decoration: line-through;   
+}
+
 
 .li {
   /* vertical-align: top; */
@@ -39,3 +45,15 @@
   padding: 1vh 0 1vh 2.5rem;
   background: url("../Assets/eye.png") left top no-repeat;
 }
+@media only screen and (max-width: 600px) {
+.root{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .list{
+      padding-left: 1rem;
+  }
+  .title {
+    font-size: 8vw;
+  }
+}  
