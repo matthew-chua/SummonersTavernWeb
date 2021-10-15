@@ -6,7 +6,7 @@
 
 .faqIndivCont {
   /* max-width: 1000px; */
-  width: 80%;
+  width: 70%;
   margin: 20px 0 20px 0;
   /* height: 15vh; */
   display: flex;
@@ -27,7 +27,7 @@
 }
 
 .faqIndivContOpen {
-  width: 80%;
+  width: 70%;
   /* height: 40vh; */
   display: flex;
   position: relative;

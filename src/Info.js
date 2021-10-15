@@ -10,7 +10,7 @@ export const FAQ_LIST = [
   },
   {
     id: 2,
-    question: "What makes this project different from other NFT projects? ",
+    question: "How is this project different from others?",
     answer: [
       "A project initiative by 4Q Labs, our ultimate goal is to show off the work of underrepresented artists who have great talent, and strive to add artistic value to the Solana NFT space.",
     ],
@@ -57,11 +57,5 @@ export const FAQ_LIST = [
       "Marketplaces we currently have in mind: FTX, Alpha Art, Solanart, Magic Eden and Digital Eyes (in no particular order)",
     ],
   },
-  {
-    id: 9,
-    question: "What is the roadmap of the Tavern going forward?",
-    answer: [
-      "Going forward, we hope to use our experiences to collaborate with new artists and launch fresh projects. For more information, please refer to the roadmap portion of our whitepaper. ",
-    ],
-  },
+
 ];
