@@ -6,6 +6,7 @@ import classes from "./Menu.module.css";
 //assets
 import twitter from "../Assets/twitterLogo1.svg";
 import discord from "../Assets/discordLogo.svg";
+import mug from "../Assets/mug.png"
 
 
 function Menu({ menuOpen, setMenuOpen }) {
@@ -31,7 +32,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                 data-text="home"
                 onClick={closeMenuHandler}
               >
-                Home
+                <img src={mug} className={classes.mug}/>
               </a>
             </li>
             <li className={classes.li}>

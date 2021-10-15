@@ -6,7 +6,7 @@ import classes from "./NavBar.module.css";
 //assets
 import twitter from "./Assets/twitterLogo1.svg";
 import discord from "./Assets/discordLogo.svg";
-import logo from "./Assets/stLogo.png";
+import logo from "./Assets/webLogo.png";
 
 
 export default function NavBar() {

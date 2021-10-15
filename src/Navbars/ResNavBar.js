@@ -2,8 +2,8 @@ import React from "react";
 
 import classes from "./ResNavBar.module.css";
 
-import STLogoOnly from "../Assets/STlogoOnly.png";
-import STLogo from "../Assets/stLogo.png";
+
+import STLogo from "../Assets/logoMobile.png";
 
 function ResNavBar({ menuOpen, setMenuOpen }) {
   const menuOnClickHandler = () => {
