@@ -109,7 +109,7 @@ function Intro() {
               <span className={classes.time}>??</span>
             </div>
           </div>
-          {width > 800 && (
+          {/* {width > 800 && (
             <>
               <button
                 onClick={() =>
@@ -119,14 +119,14 @@ function Intro() {
                 }
                 className={classes.litePaper}
               >
-                LITEPAPER
+                WHITEPAPER
               </button>
-              {/* <p className={classes.smallText}>Coming Soon!</p>{" "} */}
+              
             </>
-          )}
+          )} */}
         </div>
       </div>
-      <div className={classes.bottomCont}>
+      {/* <div className={classes.bottomCont}>
         {width <= 800 && (
           <>
             <button
@@ -137,12 +137,12 @@ function Intro() {
               }
               className={classes.litePaper}
             >
-              LITEPAPER
+              WHITEPAPER
             </button>
-            {/* <p className={classes.smallText}>Coming Soon!</p> */}
+            
           </>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

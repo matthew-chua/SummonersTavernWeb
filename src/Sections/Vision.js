@@ -54,7 +54,7 @@ export default function Vision() {
             contentStyle={{ background: "#e0dacb", color: "#42434b" }}
             contentArrowStyle={{ borderRight: "7px solid  #e0dacb" }}
             // layout={"2-columns"}
-            iconStyle={{ background: "", color: "#e0dacb" }}
+            iconStyle={{ background: "#e0dacb", color: "#e0dacb" }}
           >
             <h3 className="vertical-timeline-element-title">
               Phase 2 (Launch)
@@ -74,7 +74,7 @@ export default function Vision() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#e0dacb", color: "#42434b" }}
             contentArrowStyle={{ borderRight: "7px solid  #e0dacb" }}
-            iconStyle={{ background: "", color: "#e0dacb" }}
+            iconStyle={{ background: "#e0dacb", color: "#e0dacb" }}
           >
             <h3 className="vertical-timeline-element-title">
               Phase 3 (Post-Launch Campaign)

@@ -30,9 +30,10 @@ export default function EldersNew() {
             onClick={() => openLink("https://twitter.com/SOLsilson")}
           />
           <p className={classes.desc}>
-            1/2 of 4Q Labs. As an NFT investor/collector who is active in many
-            communities, he has an acute sense of the factors which make
-            projects wildly successful.
+            1/2 of 4Q Labs.
+            <br /> <br />
+            Collects JPEGs for a living. Knows what makes projects wildly
+            successful.
           </p>
         </div>
 
@@ -45,9 +46,9 @@ export default function EldersNew() {
             onClick={() => openLink("https://twitter.com/Sol_MorseCode")}
           />
           <p className={classes.desc}>
-            2/2 of 4Q Labs. A practicing artist in the industry, MC’s experience
-            in the fine arts space has enabled him to develop a keen eye for
-            artistic talent and the best way to manage them.
+            2/2 of 4Q Labs. <br />
+            <br />
+            Practicing artist. Professional PNG curator.
           </p>
         </div>
 
@@ -57,7 +58,7 @@ export default function EldersNew() {
           <img
             src={rat}
             className={classes.pic}
-            onClick={() => openLink("https://twitter.com/dingding_jr")}
+            onClick={() => openLink("https://dingding15.artstation.com")}
           />
           <p className={classes.desc}>
             Likes to draw waifus in his parents' basement. Also does concept art
@@ -73,7 +74,7 @@ export default function EldersNew() {
           <img
             src={skull}
             className={classes.pic}
-            onClick={() => openLink("https://twitter.com/sol_cypher")}
+            
           />
           <p className={classes.desc}>I really really REALLY love coding.</p>
         </div>
@@ -83,12 +84,25 @@ export default function EldersNew() {
           <img
             src={bird}
             className={classes.pic}
-            onClick={() => openLink("https://twitter.com/SOL_Cheeezzyyyy")}
+            
           />
           <p className={classes.desc}>
             Degenerate aspiring to be a professional blockchain developer.
           </p>
         </div>
+      </div>
+      <div className={classes.whitePaperContainer}>
+      <button
+      className={classes.litePaper}
+      onClick={() =>
+        openLink(
+          "https://summoners-tavern.gitbook.io/summoners-tavern-whitepaper-x/introduction/what-is-this-project-about"
+          )
+        }
+        >
+        WHITEPAPER
+      </button>
+        <p className={classes.text}>Read our whitepaper to find out more!</p>
       </div>
     </div>
   );

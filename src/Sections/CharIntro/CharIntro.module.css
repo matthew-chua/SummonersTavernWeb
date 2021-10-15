@@ -12,6 +12,9 @@
   margin: 15vh 0 10vh 0;
   /* height: 100vh; */
   padding-top: 6rem;
+  background-color: #42434b;
+  padding-bottom: 3rem;
+  
 }
 .content {
   display: flex;

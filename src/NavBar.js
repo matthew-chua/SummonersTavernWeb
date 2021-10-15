@@ -44,16 +44,20 @@ export default function NavBar() {
         </a> */}
       </div>
       <div className={classes.right}>
+        
         <img
           src={discord}
           onClick={() => openLink("https://discord.gg/DhZ4mRKh3U")}
           className={classes.icon}
         />
+        
+        
         <img
           src={twitter}
           onClick={() => openLink("https://twitter.com/SummonersTavern")}
           className={classes.icon}
         />
+        
       </div>
     </div>
   );

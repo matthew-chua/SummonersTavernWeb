@@ -1,10 +1,9 @@
 .title {
   font-weight: 400;
   font-size: 3vw;
-  margin-bottom: 5vh;
 }
 .root {
-  padding-top: 5rem;
+  padding-top: 6rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,7 +16,7 @@
 .secondRow {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
+  padding-top: 0rem;
 }
 .pic {
   width: 15vw;
@@ -79,6 +78,31 @@
   align-items: center;
   padding: 2rem;
 }
+.litePaper {
+  font-size: 3vw;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Eagle Lake", cursive;
+  padding-top: 5rem;
+  width: fit-content;
+  /* text-align: center; */
+
+  /* border: none; */
+
+}
+
+.litePaper:hover {
+  color: orange;
+  transition: 0.1s ease;
+  transform: scale(1);
+}
+.text{
+  font-size: 1.5vw;
+}
+
 
 @media only screen and (max-width: 600px) {
   /* .root {
@@ -151,5 +175,11 @@
     margin-bottom: 2vh;
     padding-top: 1vh;
 
+  }
+  .litePaper{
+    font-size: 8vw;
+  }
+  .text{
+    font-size: 4vw;
   }
 }
