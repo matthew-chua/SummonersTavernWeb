@@ -75,11 +75,11 @@ function Intro() {
           <img src={heads} alt="mascot" className={classes.mascot} />
         </div>
         <div className={classes.counterTextCont}>
-          {width >= 800 && (
+          {/* {width >= 800 && (
             <div className={classes.headerCont}>
               <img className={classes.headerImg} src="{STLogo}" alt="ST-Logo" />
             </div>
-          )}
+          )} */}
           <h1 className={classes.greetings}>Greetings Summoner,</h1>
           <p className={classes.subtitle}>Next summoning in...</p>
           {/* <span className={classes.greetingsText}>
@@ -104,20 +104,40 @@ function Intro() {
               <span className={classes.time}>{timer?.seconds}</span>
             </div>
           </div>
-          <button
-            // onClick={() =>
-            //   openLink(
-            //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
-            //   )
-            // }
-            className={classes.litePaper}
-          >
-            LITEPAPER
-          </button>
-          <p className={classes.smallText}>Coming Soon!</p>
+          {width > 800 && (
+            <>
+              <button
+                // onClick={() =>
+                //   openLink(
+                //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
+                //   )
+                // }
+                className={classes.litePaper}
+              >
+                LITEPAPER
+              </button>
+              <p className={classes.smallText}>Coming Soon!</p>{" "}
+            </>
+          )}
         </div>
       </div>
-      <div className={classes.bottomCont}></div>
+      <div className={classes.bottomCont}>
+        {width <= 800 && (
+          <>
+            <button
+              // onClick={() =>
+              //   openLink(
+              //     "https://docs.google.com/document/d/1ILW5uRnzDpTHuA-zI69Y1xXFeYH9daEBdN62Y_4iRvg/edit"
+              //   )
+              // }
+              className={classes.litePaper}
+            >
+              LITEPAPER
+            </button>
+            <p className={classes.smallText}>Coming Soon!</p>
+          </>
+        )}
+      </div>
     </div>
   );
 }

@@ -16,8 +16,18 @@ function EachFAQ({ question, answer }) {
   const { height, width } = useWindowDimensions();
 
   // Counting number of words:
-  const wordCounter = (string) => {
-    return string.split(" ").length;
+  const wordCounter = (stringArray) => {
+    let counter = 0;
+    stringArray.forEach((string) => {
+      counter += string.split(" ").length;
+      if (12 < string.length < 20) {
+        counter += 20;
+      } else if (string.length > 30) counter -= 10;
+    });
+    if (stringArray.length > 0) {
+      counter += stringArray.length * 15;
+    }
+    return counter;
   };
   return (
     <div
@@ -34,7 +44,7 @@ function EachFAQ({ question, answer }) {
             : { height: "15vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 10) * 4 + 20}vh`,
+              height: `${Math.floor(wordCounter(answer) / 10) * 3.75 + 17}vh`,
             }
           : { height: "10vh" }
       }
@@ -46,24 +56,25 @@ function EachFAQ({ question, answer }) {
         size={width > 800 ? "2x" : "x"}
       />
 
-      {isOpen && (
-        <span
-          style={
-            isOpen
-              ? {
-                  display: "flex",
-                  opacity: "100%",
-                  transition: "all 0.3s ease",
-                  // top: `${width > 800 ? "20vh" : "15vh"}`,
-                }
-              : { display: "none", opacity: "0%" }
-          }
-          className={classes.answer}
-        >
-          {answer}
-        </span>
-      )}
-      <hr className={classes.line} />
+      {isOpen &&
+        answer?.map((para, index) => (
+          <span
+            style={
+              isOpen
+                ? {
+                    display: "flex",
+                    opacity: "1",
+                    transition: "all 0.3s ease",
+                    // top: `${width > 800 ? "20vh" : "15vh"}`,
+                  }
+                : { display: "none", opacity: "0" }
+            }
+            className={classes.answer}
+          >
+            {para}
+          </span>
+        ))}
+      {/* <hr className={classes.line} /> */}
     </div>
   );
 }

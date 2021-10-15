@@ -12,9 +12,12 @@
   display: flex;
   position: relative;
   /* border: 1px solid #ededed; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  padding: 20vh 5% 0 5%;
+  border-left: 1px solid white;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: height 0.2s ease;
+  flex-direction: column;
 }
 
 .faqIndivCont:hover {
@@ -29,10 +32,13 @@
   display: flex;
   position: relative;
   /* border: 1px solid #ffff; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
   cursor: pointer;
   transition: all 0.2s ease;
   margin: 20px 0 20px 0;
+  padding: 20vh 5% 0 5%;
+  flex-direction: column;
+  border-left: 1px solid white;
 }
 
 .text {
@@ -45,7 +51,7 @@
   /* opacity: 100%; */
   transition: all 0.3s ease;
   text-align: left;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 .text:hover {
@@ -75,12 +81,16 @@
 }
 
 .answer {
-  position: absolute;
+  /* position: absolute;
   top: 20vh;
   left: 5%;
   text-align: left;
-  padding-right: 5%;
+  padding-right: 5%; */
+  text-align: left;
   font-size: 1.5vw;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  width: 90%;
 }
 .line {
   display: block;
