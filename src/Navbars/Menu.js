@@ -6,8 +6,7 @@ import classes from "./Menu.module.css";
 //assets
 import twitter from "../Assets/twitterLogo1.svg";
 import discord from "../Assets/discordLogo.svg";
-import mug from "../Assets/mug.png"
-
+import mug from "../Assets/mug.png";
 
 function Menu({ menuOpen, setMenuOpen }) {
   const closeMenuHandler = () => {
@@ -32,7 +31,7 @@ function Menu({ menuOpen, setMenuOpen }) {
                 data-text="home"
                 onClick={closeMenuHandler}
               >
-                <img src={mug} className={classes.mug}/>
+                <img src={mug} className={classes.mug} />
               </a>
             </li>
             <li className={classes.li}>
@@ -58,14 +57,14 @@ function Menu({ menuOpen, setMenuOpen }) {
             <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
-                href="#vision"
+                href="#roadmap"
                 data-text="vision"
                 onClick={closeMenuHandler}
               >
                 Roadmap
               </a>
             </li>
-            
+
             <li className={classes.li}>
               <a
                 className={`${menuOpen && classes.aActive} ${classes.a}`}
@@ -94,9 +93,7 @@ function Menu({ menuOpen, setMenuOpen }) {
               >
                 <img
                   src={discord}
-                  onClick={() =>
-                    openLink("https://discord.gg/DhZ4mRKh3U")
-                  }
+                  onClick={() => openLink("https://discord.gg/DhZ4mRKh3U")}
                   className={classes.icon}
                 />
                 <img
