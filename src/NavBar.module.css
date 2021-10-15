@@ -14,7 +14,7 @@
   padding: 1rem;
   color: #e0dacb;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 .link:hover {
   color: orange;
@@ -29,8 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  height: fit-content;
 }
 .icon {
   cursor: pointer;
@@ -41,6 +39,7 @@
   -moz-transition: 0.1s ease-in;
   -webkit-transition: 0.1s ease-in;
   transform: scale(1);
+  width: 5vw;
 }
 .icon:hover {
   transform: scale(1.1);
