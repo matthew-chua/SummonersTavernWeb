@@ -24,7 +24,7 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  margin-right: 40vw;
+  margin-right: 50vw;
 }
 
 .link {
@@ -55,7 +55,7 @@
 
 .rightHam {
   cursor: pointer;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-left: 1.25em;
   position: relative;
   width: 40px;
@@ -75,7 +75,7 @@
   width: 100%;
   transition: all 0.55s ease;
   /* border-top: 7px solid rgb(124, 124, 124); */
-  height: 2px;
+  height: 1.5px;
 
   content: "";
   /* background-color: black; */
@@ -87,11 +87,11 @@
 }
 
 .menuMiddle {
-  top: 18px;
+  top: 16px;
 }
 
 .menuBottom {
-  top: 36px;
+  top: 32px;
 }
 
 .menuTopClick {
