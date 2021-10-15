@@ -20,7 +20,7 @@ export const FAQ_LIST = [
     question: "What is an outworlder and what can I do with one?",
     answer: [
       "An Outworlder is a being hailing from multiple different realms, called upon by a summoner through a portal and contracted by coins that are converted into their native currency. ",
-      "WSummoning an outworlder will enable the team to develop a wider range of art for the Solana NFT Space. All summoners will also gain exclusive access to the Tavern community and new artworks in the future.",
+      "Summoning an outworlder will enable the team to develop a wider range of art for the Solana NFT Space. All summoners will also gain exclusive access to the Tavern community and new artworks in the future.",
     ],
   },
   {
@@ -54,7 +54,7 @@ export const FAQ_LIST = [
     answer: [
       "We are looking to list on all major marketplaces and will work with them to ensure listings take place as soon as the collection is fully minted.",
 
-      "Marketplaces we currently have in mind: FTX, Alpha Art, Solanart, Magic Eden and Digital Eyes (in no particular order)",
+      "Marketplaces we currently have in mind: FTX, Alpha Art, Solanart, Magic Eden and Digital Eyes (in no particular order).",
     ],
   },
 

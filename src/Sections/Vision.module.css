@@ -3,8 +3,8 @@
   flex-direction: column;
   position: relative;
   padding-top: 6rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .title {
@@ -13,7 +13,7 @@
   margin-bottom: 5vh;
 }
 .list {
-  padding-left: 2rem;
+  padding-left: 1rem;
   text-align: left;
   list-style-image: url("../Assets/eye.png");
   /* display: flex; */
@@ -44,6 +44,15 @@
   vertical-align: text-top;
   padding: 1vh 0 1vh 2.5rem;
   background: url("../Assets/eye.png") left top no-repeat;
+}
+.done {
+  /* vertical-align: middle; */
+  padding-top: 0;
+  display: table;
+  vertical-align: text-top;
+  padding: 1vh 0 1vh 2.5rem;
+  background: url("../Assets/eye.png") left top no-repeat;
+  text-decoration: line-through;
 }
 @media only screen and (max-width: 600px) {
 .root{

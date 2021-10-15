@@ -29,10 +29,10 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li className={classes.item}>
+              <li className={classes.done}>
                 Ideation stage for artwork and website
               </li>
-              <li className={classes.item}>Launch of website and socials</li>
+              <li className={classes.done}>Launch of website and socials</li>
               <li className={classes.item}>
                 Finish the generation of art pieces
               </li>
@@ -64,9 +64,8 @@ export default function Vision() {
                 Get listed and verified on top marketplaces
               </li>
               <li className={classes.item}>
-                Set up community wallet that receives top ups from secondary
-                royalties. (Decisions on how the funds are spent will be made by
-                the community)
+                Set up community wallet that receives top ups from
+                royalties
               </li>
             </ul>
           </VerticalTimelineElement>
