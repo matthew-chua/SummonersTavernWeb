@@ -1,0 +1,6 @@
+.root{
+
+}
+.item:nth-child(odd){
+    align-self: flex-end;
+}

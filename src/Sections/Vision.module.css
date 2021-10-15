@@ -1,18 +1,20 @@
 .root{
-    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-.pic{
-    width: 90vw;
+
+.root::after{
+    background-color: black;
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: calc(50% - 2px);
 }
 
 .title {
     font-weight: 400;
     font-size: 3vw;
     margin-bottom: 5vh;
-  }
-
-  @media only screen and (max-width: 800px) {
-    .title {
-        font-size: 8vw;
-      }
   }
