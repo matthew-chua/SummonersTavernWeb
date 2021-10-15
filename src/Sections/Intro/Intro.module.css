@@ -36,11 +36,13 @@
   /* max-width: 100rem; */
   /* justify-content: space-around; */
   padding-top: 1rem;
+  align-items: center;
 }
 
 .mascotCont {
   display: flex;
-  width: 30vw;
+  width: 33vw;
+  height: 33vw;
   margin-right: 5vw;
   border-radius: 1rem;
   /* background-color: red; */
@@ -66,11 +68,12 @@
   justify-content: flex-start;
   text-align: left;
   width: 50vw;
+  /* height: 30vw; */
 }
 
 .greetings {
   font-size: 3.5vw;
-  margin-bottom: 4rem;
+  margin-bottom: 5vw;
   font-weight: 400;
   color: orange;
   /* font-style: italic; */
@@ -224,6 +227,7 @@
   .mascotCont {
     width: 70vw;
     margin-right: 0;
+    height: auto;
     /* height: auto; */
     /* height: 40vh; */
   }
