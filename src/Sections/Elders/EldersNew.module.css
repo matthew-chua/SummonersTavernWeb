@@ -176,4 +176,10 @@
     padding-top: 1vh;
 
   }
+  .litePaper{
+    font-size: 8vw;
+  }
+  .text{
+    font-size: 4vw;
+  }
 }
