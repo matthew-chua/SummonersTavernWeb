@@ -29,15 +29,23 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li>Ideation stage for artwork and website</li>
-              <li>Launch of website and socials</li>
-              <li>Finish the generation of art pieces</li>
-              <li>Announce details about presales and conduct presales</li>
-              <li>
+              <li className={classes.item}>
+                Ideation stage for artwork and website
+              </li>
+              <li className={classes.item}>Launch of website and socials</li>
+              <li className={classes.item}>
+                Finish the generation of art pieces
+              </li>
+              <li className={classes.item}>
+                Announce details about presales and conduct presales
+              </li>
+              <li className={classes.item}>
                 Explore the possibilities and boundaries of Smart Controls on
                 Sol
               </li>
-              <li>Build the foundation for the Tavern community</li>
+              <li className={classes.item}>
+                Build the foundation for the Tavern community
+              </li>
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -52,8 +60,10 @@ export default function Vision() {
 
             <ul className={classes.list}>
               <li className={classes.item}>Smooth mint</li>
-              <li>Get listed and verified on top marketplaces</li>
-              <li>
+              <li className={classes.item}>
+                Get listed and verified on top marketplaces
+              </li>
+              <li className={classes.item}>
                 Set up community wallet that receives top ups from secondary
                 royalties. (Decisions on how the funds are spent will be made by
                 the community)
@@ -71,20 +81,22 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li>Verify summoners</li>
-              <li>
+              <li className={classes.item}>Verify summoners</li>
+              <li className={classes.item}>
                 Conduct community activities and host events for summoners
               </li>
-              <li>
+              <li className={classes.item}>
                 Build on the tech behind our NFTs, with the help of the
                 community
               </li>
-              <li>
+              <li className={classes.item}>
                 Begin the ideation phase of the next project which will involve
                 the community
               </li>
-              <li>Build our incubator's systems and processes</li>
-              <li>More to come...</li>
+              <li className={classes.item}>
+                Build our incubator's systems and processes
+              </li>
+              <li className={classes.item}>More to come...</li>
             </ul>
           </VerticalTimelineElement>
         </VerticalTimeline>
