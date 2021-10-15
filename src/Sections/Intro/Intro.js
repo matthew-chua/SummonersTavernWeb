@@ -88,20 +88,25 @@ function Intro() {
           <div className={classes.counterCont}>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Days</span>
-              <span className={classes.time}>{timer?.days}</span>
+              {/* <span className={classes.time}>{timer?.days}</span> */}
+              <span className={classes.time}>??</span>
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Hours</span>
-              <span className={classes.time}>{timer?.hours}</span>
+              {/* <span className={classes.time}>{timer?.hours}</span> */}
+              <span className={classes.time}>??</span>
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Minutes</span>
-              <span className={classes.time}>{timer?.minutes}</span>
+              {/* <span className={classes.time}>{timer?.minutes}</span> */}
+              <span className={classes.time}>??</span>
             </div>
             <div className={classes.timeHeadersCont1}>
               <span className={classes.timeHeader}>Seconds</span>
 
-              <span className={classes.time}>{timer?.seconds}</span>
+              {/* <span className={classes.time}>{timer?.seconds}</span> */}
+
+              <span className={classes.time}>??</span>
             </div>
           </div>
           {width > 800 && (
@@ -116,7 +121,7 @@ function Intro() {
               >
                 LITEPAPER
               </button>
-              <p className={classes.smallText}>Coming Soon!</p>{" "}
+              {/* <p className={classes.smallText}>Coming Soon!</p>{" "} */}
             </>
           )}
         </div>
@@ -134,7 +139,7 @@ function Intro() {
             >
               LITEPAPER
             </button>
-            <p className={classes.smallText}>Coming Soon!</p>
+            {/* <p className={classes.smallText}>Coming Soon!</p> */}
           </>
         )}
       </div>

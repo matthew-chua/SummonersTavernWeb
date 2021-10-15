@@ -111,3 +111,9 @@
   transform: rotate(-410deg);
   transition: 0.55s 0.5s;
 }
+
+@media only screen and (max-width: 800px) {
+  .stLogo {
+    width: 100%;
+  }
+}
