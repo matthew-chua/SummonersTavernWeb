@@ -21,11 +21,11 @@ function EachFAQ({ question, answer }) {
     stringArray.forEach((string) => {
       counter += string.split(" ").length;
       if (12 < string.length < 20) {
-        counter += 20;
-      } else if (string.length > 30) counter -= 10;
+        counter += 30;
+      } else if (string.length > 30) counter += 10;
     });
     if (stringArray.length > 0) {
-      counter += stringArray.length * 15;
+      counter += stringArray.length * 45;
     }
     return counter;
   };
@@ -37,16 +37,17 @@ function EachFAQ({ question, answer }) {
         width > 800
           ? isOpen
             ? {
-                height: `${
-                  Math.floor(wordCounter(answer) / 15) * 2 + 20 + 15
-                }vh`,
+                // height: `${Math.floor(wordCounter(answer) / 15) * 3 + 12}vh`,
+                // height: "fit-content",
+                transition: "all 0.3s ease",
               }
-            : { height: "15vh" }
+            : { height: "10vh" }
           : isOpen
           ? {
-              height: `${Math.floor(wordCounter(answer) / 10) * 4 + 20}vh`,
+              // height: `${Math.floor(wordCounter(answer) / 10) * 2 + 2}vh`,
+              height: "fit-content",
             }
-          : { height: "10vh" }
+          : { height: "5vh" }
       }
     >
       <span className={classes.text}>{question}</span>
