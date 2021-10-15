@@ -1,16 +1,10 @@
+
+
 .root{
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-.root::after{
-    background-color: black;
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    left: calc(50% - 2px);
+    padding: 6rem;
 }
 
 .title {
@@ -18,3 +12,20 @@
     font-size: 3vw;
     margin-bottom: 5vh;
   }
+.list{
+    padding-left: 1rem;
+    text-align: left;
+    list-style-image: url("../Assets/eye.png");
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* list-style-position: inside; */
+    display: inline-block;
+}
+.item{
+    vertical-align: middle;
+    padding-top: 0;
+}
+
+
+
