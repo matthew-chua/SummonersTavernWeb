@@ -9,6 +9,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import "./timeline.css";
+import "react-vertical-timeline-component/style.min.css";
 //css
 import classes from "./Vision.module.css";
 
@@ -17,7 +18,7 @@ export default function Vision() {
     <div className={classes.root} id="roadmap">
       <h1 className={classes.title}>ROADMAP</h1>
       <div className={classes.content}>
-        <VerticalTimeline>
+        <VerticalTimeline layout={"2-columns"}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#e0dacb", color: "#42434b" }}
@@ -52,6 +53,7 @@ export default function Vision() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#e0dacb", color: "#42434b" }}
             contentArrowStyle={{ borderRight: "7px solid  #e0dacb" }}
+            // layout={"2-columns"}
             iconStyle={{ background: "", color: "#e0dacb" }}
           >
             <h3 className="vertical-timeline-element-title">
@@ -64,8 +66,7 @@ export default function Vision() {
                 Get listed and verified on top marketplaces
               </li>
               <li className={classes.item}>
-                Set up community wallet that receives top ups from
-                royalties
+                Set up community wallet that receives top ups from royalties
               </li>
             </ul>
           </VerticalTimelineElement>
