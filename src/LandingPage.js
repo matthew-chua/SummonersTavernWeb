@@ -9,6 +9,7 @@ import Socials from "./Sections/Socials";
 import FAQ from "./Sections/FAQ/FAQ";
 import ResNavBar from "./Navbars/ResNavBar";
 import Menu from "./Navbars/Menu";
+import { Helmet } from "react-helmet";
 
 //animations
 import { Fade } from "react-reveal";
@@ -34,33 +35,46 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
   // Get Dimensions of the Screen:
   const { height, width } = useWindowDimensions();
   return (
-    <div>
-      {width > 800 && <NavBar />}
+    <>
+      <Helmet>
+        <title>Summoner's Tavern by 4QLabs</title>
+        <meta
+          name="description"
+          content="Summoner's Tavern living in SOLANA Metaverse. 5000 Outworlders to be summoned soon..."
+        />
+        <meta
+          name="keywords"
+          content="Summoner's Tavern, Outworlders, Solana, NFT, 4QLabs"
+        />
+      </Helmet>
+      <div>
+        {width > 800 && <NavBar />}
 
-      <Fade duration="2000">
-        <Intro />
-      </Fade>
-      <Fade duration="2000">
-        <Lore />
-      </Fade>
+        <Fade duration="2000">
+          <Intro />
+        </Fade>
+        <Fade duration="2000">
+          <Lore />
+        </Fade>
 
-      {/* <Mission /> */}
-      <Fade duration="2000">
-        <CharIntro />
-      </Fade>
-      <Fade duration="2000">
-        <Vision />
-        {/* <Attributes /> */}
-      </Fade>
-      <Fade duration="2000">
-        <FAQ />
-      </Fade>
-      <Fade duration="2000">
-        <Elders />
-      </Fade>
+        {/* <Mission /> */}
+        <Fade duration="2000">
+          <CharIntro />
+        </Fade>
+        <Fade duration="2000">
+          <Vision />
+          {/* <Attributes /> */}
+        </Fade>
+        <Fade duration="2000">
+          <FAQ />
+        </Fade>
+        <Fade duration="2000">
+          <Elders />
+        </Fade>
 
-      {/* <Socials /> */}
-      <p className={classes.footer}>&#169; 2021 4Q Labs.</p>
-    </div>
+        {/* <Socials /> */}
+        <p className={classes.footer}>&#169; 2021 4Q Labs.</p>
+      </div>
+    </>
   );
 }
