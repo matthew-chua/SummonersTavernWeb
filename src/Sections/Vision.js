@@ -38,11 +38,11 @@ export default function Vision() {
                 Finish the generation of art pieces
               </li>
               <li className={classes.item}>
-                Announce details about presales and conduct presales
+                Explore the possibilities and boundaries of Smart Contracts on
+                Sol
               </li>
               <li className={classes.item}>
-                Explore the possibilities and boundaries of Smart Controls on
-                Sol
+                Announce details about presales and conduct presales
               </li>
               <li className={classes.item}>
                 Build the foundation for the Tavern community
@@ -61,9 +61,9 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li className={classes.item}>Smooth mint</li>
+              <li className={classes.item}>Minting</li>
               <li className={classes.item}>
-                Get listed and verified on top marketplaces
+                Get verified and listed on top marketplaces
               </li>
               <li className={classes.item}>
                 Set up community wallet that receives top ups from royalties
@@ -86,15 +86,14 @@ export default function Vision() {
                 Conduct community activities and host events for summoners
               </li>
               <li className={classes.item}>
-                Build on the tech behind our NFTs, with the help of the
-                community
+                Build on the tech behind our NFTs, focusing on airdrops
               </li>
               <li className={classes.item}>
-                Begin the ideation phase of the next project which will involve
+                Begin the ideation phase of the next project and heavily involve
                 the community
               </li>
               <li className={classes.item}>
-                Build our incubator's systems and processes
+              Streamline our incubator’s systems and processes
               </li>
               <li className={classes.item}>More to come...</li>
             </ul>
