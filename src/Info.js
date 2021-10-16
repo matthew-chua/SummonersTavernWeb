@@ -19,7 +19,7 @@ export const FAQ_LIST = [
     id: 3,
     question: "What is an outworlder and what can I do with one?",
     answer: [
-      "An Outworlder is a being hailing from multiple different realms, called upon by a summoner through a portal and contracted by coins that are converted into their native currency. ",
+      "Hailing from different realms, an Outworlder is called upon by a summoner through a portal and contracted by coins that are converted into their native currency. ",
       "Summoning an outworlder will enable the team to develop a wider range of art for the Solana NFT Space. All summoners will also gain exclusive access to the Tavern community and new artworks in the future.",
     ],
   },
