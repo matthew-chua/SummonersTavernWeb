@@ -25,6 +25,7 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
   // const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    window.scroll(0, 0);
     return () => {
       setMenuOpen(false);
     };
@@ -37,36 +38,29 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
       {width > 800 && <NavBar />}
 
       <Fade duration="2000">
-        
-          <Intro />
+        <Intro />
       </Fade>
       <Fade duration="2000">
+        <Lore />
+      </Fade>
 
-          <Lore />
-          </Fade>
+      {/* <Mission /> */}
+      <Fade duration="2000">
+        <CharIntro />
+      </Fade>
+      <Fade duration="2000">
+        <Vision />
+        {/* <Attributes /> */}
+      </Fade>
+      <Fade duration="2000">
+        <FAQ />
+      </Fade>
+      <Fade duration="2000">
+        <Elders />
+      </Fade>
 
-          {/* <Mission /> */}
-          <Fade duration="2000">
-
-          <CharIntro />
-          </Fade>
-          <Fade duration="2000">
-
-          <Vision />
-          {/* <Attributes /> */}
-          </Fade>
-          <Fade duration="2000">
-
-          <FAQ />
-          </Fade>
-          <Fade duration="2000">
-
-          <Elders />
-          </Fade>
-
-          {/* <Socials /> */}
-          <p className={classes.footer}>&#169; 2021 4Q Labs.</p>
-        
+      {/* <Socials /> */}
+      <p className={classes.footer}>&#169; 2021 4Q Labs.</p>
     </div>
   );
 }
