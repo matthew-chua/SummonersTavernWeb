@@ -36,17 +36,6 @@ export default function LandingPage({ menuOpen, setMenuOpen }) {
   const { height, width } = useWindowDimensions();
   return (
     <>
-      <Helmet>
-        <title>Summoner's Tavern by 4QLabs</title>
-        <meta
-          name="description"
-          content="Summoner's Tavern living in SOLANA Metaverse. 5000 Outworlders to be summoned soon..."
-        />
-        <meta
-          name="keywords"
-          content="Summoner's Tavern, Outworlders, Solana, NFT, 4QLabs"
-        />
-      </Helmet>
       <div>
         {width > 800 && <NavBar />}
 
