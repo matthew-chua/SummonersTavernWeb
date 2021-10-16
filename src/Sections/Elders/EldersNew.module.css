@@ -92,12 +92,16 @@
   border: none;
   cursor: pointer;
   font-family: "Eagle Lake", cursive;
-  padding-top: 5rem;
+  margin-top: 5rem;
   width: fit-content;
-  /* text-align: center; */
+  height: fit-content;
+  text-align: center;
 
-  /* border: none; */
+  
 
+}
+.litePaperContainer{
+  height: fit-content;
 }
 
 .litePaper:hover {

@@ -39,7 +39,7 @@
   -moz-transition: 0.1s ease-in;
   -webkit-transition: 0.1s ease-in;
   transform: scale(1);
-  width: 5vw;
+  width: clamp(4rem, 5vw, 4.5rem);
 }
 .icon:hover {
   transform: scale(1.1);
