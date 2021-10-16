@@ -39,6 +39,9 @@ export default function NavBar() {
         <a className={classes.link} href="#elders">
           ELDERS
         </a>
+        <a className={classes.link} href="https://summoners-tavern.gitbook.io/summoners-tavern-whitepaper-x/introduction/what-is-this-project-about" target="_blank" rel="noopener noreferrer">
+          WHITEPAPER
+        </a>
         {/* <a className={classes.link} href="#socials">
           Socials
         </a> */}

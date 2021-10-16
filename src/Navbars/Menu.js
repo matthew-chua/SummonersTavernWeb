@@ -86,6 +86,16 @@ function Menu({ menuOpen, setMenuOpen }) {
               </a>
             </li>
             <li className={classes.li}>
+              <a
+                className={`${menuOpen && classes.aActive} ${classes.a}`}
+                href="https://summoners-tavern.gitbook.io/summoners-tavern-whitepaper-x/introduction/what-is-this-project-about" target="_blank" rel="noopener noreferrer"
+                data-text="Whitepaper"
+                onClick={closeMenuHandler}
+              >
+                whitepaper
+              </a>
+            </li>
+            <li className={classes.li}>
               <div
                 className={`${classes.socials} ${
                   menuOpen && classes.socialsOpen
