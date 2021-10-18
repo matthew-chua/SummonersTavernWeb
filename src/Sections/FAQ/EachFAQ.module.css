@@ -16,32 +16,35 @@
   padding: 15vh 5% 0 5%;
   border-left: 1px solid white;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: all 4s ease;
   /* height: fit-content; */
   flex-direction: column;
+  overflow: hidden;
 }
 
 .faqIndivCont:hover {
   border-color: #ffff;
   /* border: 2px solid #ffff; */
-  transition: all 0.2s ease;
+  transition: all 2s ease;
 }
 
-.faqIndivContOpen {
-  width: 60%;
+.faqIndivCont.faqIndivContOpen {
+  /* width: 60%; */
   /* height: 40vh; */
-  display: flex;
-  position: relative;
+  /* display: flex; */
+  /* position: relative; */
   /* border: 1px solid #ffff; */
   /* border-radius: 10px; */
-  cursor: pointer;
+  /* cursor: pointer; */
   /* height: fit-content; */
   /* max-height: fit-content; */
-  transition: all 0.2s ease;
-  margin: 20px 0 20px 0;
-  padding: 15vh 5% 0 5%;
-  flex-direction: column;
-  border-left: 1px solid white;
+  /* overflow: visible; */
+  /* transition: all 0.2s ease; */
+  /* margin: 20px 0 20px 0; */
+  /* padding: 15vh 5% 0 5%; */
+  /* flex-direction: column; */
+  /* border-left: 1px solid white; */
+  overflow-x: visible;
 }
 
 .text {
@@ -85,15 +88,20 @@
 
 .answer {
   /* position: absolute;
-  top: 20vh;
-  left: 5%;
-  text-align: left;
-  padding-right: 5%; */
+    top: 20vh;
+    left: 5%;
+    text-align: left;
+    padding-right: 5%; */
+  display: block;
   text-align: left;
   font-size: 1.2vw;
   line-height: 1.5;
   margin-bottom: 20px;
   width: 90%;
+}
+
+.answer.open {
+  display: block;
 }
 .line {
   display: block;
@@ -113,10 +121,16 @@
     top: 5vh;
   }
 
-  .faqIndivContOpen {
+  .faqIndivCont.faqIndivContOpen {
     height: 30vh;
     width: 90%;
     padding-top: 11vh;
+  }
+
+  .faqIndivCont:hover {
+    border-color: #ffff;
+    /* border: 2px solid #ffff; */
+    transition: all 2s ease;
   }
 
   .faqIndivCont {
