@@ -4,9 +4,19 @@ import classes from "./Lore.module.css";
 
 //assets
 import lore from "../../Assets/lore.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
+} from "@fortawesome/free-solid-svg-icons";
+
+// Custom Hook:
+import useWindowDimensions from "../../useWindowDimensions";
 
 function Lore() {
   const [nextPage, setNextPage] = useState(0);
+
+  const { height, width } = useWindowDimensions();
 
   const togglePageHandler = () => {
     setNextPage((prevState) => {
@@ -49,13 +59,36 @@ function Lore() {
           alt="lore-background"
         /> */}
       </div>
-      <div className={classes.loreButGroup}>
-        <button onClick={previousPageHandler} type="button">
-          previous
-        </button>
-        <button onClick={togglePageHandler} type="button">
-          next
-        </button>
+      <div className={classes.loreToggleGroup}>
+        <span className={classes.pageNumber}>Page {nextPage + 1}/3</span>
+        <div className={classes.loreButGroup}>
+          <button
+            onClick={previousPageHandler}
+            type="button"
+            className={classes.nextPageBut}
+          >
+            <FontAwesomeIcon
+              className={classes.arrowIcon}
+              icon={faAngleDoubleLeft}
+              size={width > 800 ? "3x" : "2x"}
+            />
+            <span className={classes.nextPageButText}>Previous</span>
+          </button>
+
+          <button
+            onClick={togglePageHandler}
+            type="button"
+            className={classes.nextPageBut}
+          >
+            <span className={classes.nextPageButText}>Next</span>
+            <FontAwesomeIcon
+              style={width <= 800 && { marginRight: "8vw" }}
+              className={classes.arrowIcon}
+              icon={faAngleDoubleRight}
+              size={width > 800 ? "3x" : "2x"}
+            />
+          </button>
+        </div>
       </div>
     </div>
   );

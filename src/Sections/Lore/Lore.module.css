@@ -139,6 +139,57 @@
   margin-bottom: 2vh;
 }
 
+.loreToggleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loreButGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+}
+
+.nextPageButText {
+  color: #e0dacb;
+  font-family: "Sora", sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
+  margin: 0 0.5vw 0 0.5vw;
+}
+
+.nextPageBut {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nextPageBut:hover > .nextPageButText,
+.nextPageBut:hover > .arrowIcon {
+  color: orange;
+}
+
+/* .nextPageButText:hover {
+  color: orange;
+} */
+
+.pageNumber {
+  font-family: "Eagle Lake", cursive;
+  font-size: 2vw;
+  margin: 0 3vw 2vh 3vw;
+}
+
+.nextPageBut:hover.nextPageButText {
+  color: orange;
+}
+
+.arrowIcon {
+  color: #e0dacb;
+}
+
 @media only screen and (max-width: 800px) {
   .loreCont {
     margin-top: 5vh;
@@ -170,5 +221,13 @@
   }
   .img {
     width: 95vw;
+  }
+
+  .pageNumber {
+    font-size: 4vw;
+  }
+
+  .nextPageButText {
+    font-size: 3.5vw;
   }
 }
