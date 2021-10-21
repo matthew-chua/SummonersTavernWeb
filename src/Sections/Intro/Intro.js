@@ -12,8 +12,10 @@ import useWindowDimensions from "../../useWindowDimensions";
 
 // Styles:
 import classes from "./Intro.module.css";
-// unix timestamp of the actual launch time:
-const LAUNCH_DATE = moment([2021, 11, 15, 7, 0, 0]).valueOf();
+// unix timestamp of the actual launch time:1636210800
+// const LAUNCH_DATE = moment([2021, 11, 6, 23, 0, 0]).valueOf();
+// LAUNCH DATE: 6 NOVEMBER 2021:
+const LAUNCH_DATE = 1636210800 * 1000;
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
@@ -88,25 +90,25 @@ function Intro() {
           <div className={classes.counterCont}>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Days</span>
-              {/* <span className={classes.time}>{timer?.days}</span> */}
-              <span className={classes.time}>??</span>
+              <span className={classes.time}>{timer?.days}</span>
+              {/* <span className={classes.time}>??</span> */}
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Hours</span>
-              {/* <span className={classes.time}>{timer?.hours}</span> */}
-              <span className={classes.time}>??</span>
+              <span className={classes.time}>{timer?.hours}</span>
+              {/* <span className={classes.time}>??</span> */}
             </div>
             <div className={classes.timeHeadersCont}>
               <span className={classes.timeHeader}>Minutes</span>
-              {/* <span className={classes.time}>{timer?.minutes}</span> */}
-              <span className={classes.time}>??</span>
+              <span className={classes.time}>{timer?.minutes}</span>
+              {/* <span className={classes.time}>??</span> */}
             </div>
             <div className={classes.timeHeadersCont1}>
               <span className={classes.timeHeader}>Seconds</span>
 
-              {/* <span className={classes.time}>{timer?.seconds}</span> */}
+              <span className={classes.time}>{timer?.seconds}</span>
 
-              <span className={classes.time}>??</span>
+              {/* <span className={classes.time}>??</span> */}
             </div>
           </div>
           {/* {width > 800 && (
