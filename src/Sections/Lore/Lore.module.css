@@ -17,10 +17,13 @@
 }
 
 .loreImgCont {
-  display: flex;
+  display: block;
   position: relative;
   width: 65vw;
-  height: 85vw;
+  height: 90vw;
+  margin-bottom: 2vh;
+  /* height: calc(65vw * 1.5); */
+  /* height: 85vw; */
   /* transform: translateX(-50%); */
 }
 
@@ -39,6 +42,7 @@
   width: 70vw;
   border-radius: 1rem;
   max-width: 1000px;
+  height: 90vw;
   /* display: flex; */
   /* display: none; */
   opacity: 0;
@@ -235,6 +239,6 @@
 
   .loreImgCont {
     /* width: 80vw; */
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
   }
 }
