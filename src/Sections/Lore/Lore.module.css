@@ -19,6 +19,8 @@
 .loreImgCont {
   display: flex;
   position: relative;
+  width: 65vw;
+  height: 85vw;
   /* transform: translateX(-50%); */
 }
 
@@ -229,5 +231,10 @@
 
   .nextPageButText {
     font-size: 3.5vw;
+  }
+
+  .loreImgCont {
+    /* width: 80vw; */
+    margin-bottom: 4vh;
   }
 }

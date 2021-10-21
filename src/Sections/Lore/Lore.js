@@ -41,11 +41,11 @@ function Lore() {
       <h1 className={classes.title}>LORE</h1>
 
       <div className={classes.loreImgCont}>
-        <img
+        {/* <img
           className={classes.imgOff}
           src={lorePrologue}
           alt="lore-background"
-        />
+        /> */}
 
         <img
           className={`${classes.img0} ${nextPage === 0 && classes.imgOn}`}
