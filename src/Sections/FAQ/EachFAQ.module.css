@@ -88,10 +88,10 @@
 
 .answer {
   /* position: absolute;
-    top: 20vh;
-    left: 5%;
-    text-align: left;
-    padding-right: 5%; */
+  top: 20vh;
+  left: 5%;
+  text-align: left;
+  padding-right: 5%; */
   display: block;
   text-align: left;
   font-size: 1.2vw;
