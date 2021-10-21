@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import classes from "./Lore.module.css";
 
 //assets
-import lore from "../../Assets/lore.png";
+// import lore from "../../Assets/lore.png";
+import lorePrologue from "../../Assets/LorePrologue.png";
+import loreChapter1 from "../../Assets/LoreChapter1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDoubleLeft,
@@ -21,14 +23,16 @@ function Lore() {
   const togglePageHandler = () => {
     setNextPage((prevState) => {
       console.log("nextPage:", nextPage);
-      return prevState === 0 ? (prevState === 1 ? 2 : 1) : 2;
+      // return prevState === 0 ? (prevState === 1 ? 2 : 1) : 2;
+      return prevState === 0 ? 1 : 1;
     });
   };
 
   const previousPageHandler = () => {
     setNextPage((prevState) => {
       console.log("nextPage:", nextPage);
-      return prevState === 2 ? (prevState === 1 ? 0 : 1) : 0;
+      // return prevState === 2 ? (prevState === 1 ? 0 : 1) : 0;
+      return prevState === 1 ? 0 : 0;
     });
   };
   console.log(nextPage);
@@ -37,20 +41,19 @@ function Lore() {
       <h1 className={classes.title}>LORE</h1>
 
       <div className={classes.loreImgCont}>
-        <img className={classes.imgOff} src={lore} alt="lore-background" />
+        <img
+          className={classes.imgOff}
+          src={lorePrologue}
+          alt="lore-background"
+        />
         <img
           className={`${classes.img0} ${nextPage === 0 && classes.imgOn}`}
-          src={lore}
+          src={lorePrologue}
           alt="lore-background"
         />
         <img
           className={`${classes.img} ${nextPage === 1 && classes.imgOn}`}
-          src={lore}
-          alt="lore-background"
-        />
-        <img
-          className={`${classes.img2} ${nextPage === 2 && classes.imgOn}`}
-          src={lore}
+          src={loreChapter1}
           alt="lore-background"
         />
         {/* <img
@@ -58,9 +61,14 @@ function Lore() {
           src={lore}
           alt="lore-background"
         /> */}
+        {/* <img
+          className={`${classes.img2} ${nextPage === 2 && classes.imgOn}`}
+          src={lore}
+          alt="lore-background"
+        /> */}
       </div>
       <div className={classes.loreToggleGroup}>
-        <span className={classes.pageNumber}>Page {nextPage + 1}/3</span>
+        <span className={classes.pageNumber}>Page {nextPage + 1}/2</span>
         <div className={classes.loreButGroup}>
           <button
             onClick={previousPageHandler}
