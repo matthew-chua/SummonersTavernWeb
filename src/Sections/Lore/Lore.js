@@ -91,7 +91,7 @@ function Lore() {
           >
             <span className={classes.nextPageButText}>Next</span>
             <FontAwesomeIcon
-              style={width <= 800 && { marginRight: "8vw" }}
+              style={width <= 800 && { marginRight: "0" }}
               className={classes.arrowIcon}
               icon={faAngleDoubleRight}
               size={width > 800 ? "3x" : "2x"}

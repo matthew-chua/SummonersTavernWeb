@@ -41,7 +41,7 @@
   position: absolute;
   width: 70vw;
   border-radius: 1rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   height: 90vw;
   /* display: flex; */
   /* display: none; */
@@ -54,7 +54,7 @@
   position: absolute;
   width: 70vw;
   border-radius: 1rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   /* display: flex; */
   /* display: none; */
   opacity: 0;
@@ -80,7 +80,7 @@
   left: 0;
   width: 70vw;
   border-radius: 1rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   /* display: none; */
   /* display: flex; */
   opacity: 1;
@@ -94,7 +94,7 @@
   left: 0;
   width: 70vw;
   border-radius: 1rem;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   /* display: none; */
   /* display: flex; */
   opacity: 1;
