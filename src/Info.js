@@ -40,13 +40,13 @@ export const FAQ_LIST = [
     id: 6,
     question: "Will there be a presale?",
     answer: [
-      "Yes, there will be 2 presales. More info in the Presale FAQ on our discord.",
+      "Yes, there will be 1 presale for 500 outworlders on 2 Nov 1400 UTC. More info in our discord channel.",
     ],
   },
   {
     id: 7,
     question: "When will the public sale be?",
-    answer: ["We are aiming for a date in the first 2 weeks of November. "],
+    answer: ["The remaining 4500 outworlders will be available to mint on 6Nov 1400 UTC."],
   },
   {
     id: 8,

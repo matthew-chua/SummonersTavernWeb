@@ -72,7 +72,7 @@ export default function Vision() {
                 3% of royalties will go to the artist and 2% will go to the treasury
               </li>
               <li className={classes.item}>
-                This treasury is to acquire art peices for the community and to attract art talent
+                This treasury is to acquire art pieces for the community and to attract art talent
               </li>
             </ul>
           </VerticalTimelineElement>
