@@ -34,10 +34,10 @@ export default function Vision() {
                 Ideation stage for artwork and website
               </li>
               <li className={classes.done}>Launch of website and socials</li>
-              <li className={classes.item}>
+              <li className={classes.done}>
                 Finish the generation of art pieces
               </li>
-              <li className={classes.item}>
+              <li className={classes.done}>
                 Explore the possibilities and boundaries of Smart Contracts on
                 Sol
               </li>
@@ -66,7 +66,13 @@ export default function Vision() {
                 Get verified and listed on top marketplaces
               </li>
               <li className={classes.item}>
-                Set up community wallet that receives top ups from royalties
+                Set up a treasury, and fund it with 5% of sales proceeds
+              </li>
+              <li className={classes.item}>
+                3% of royalties will go to the artist and 2% will go to the treasury
+              </li>
+              <li className={classes.item}>
+                This treasury is to acquire art peices for the community and to attract art talent
               </li>
             </ul>
           </VerticalTimelineElement>
