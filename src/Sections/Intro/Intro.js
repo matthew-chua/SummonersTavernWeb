@@ -6,6 +6,7 @@ import moment from "moment";
 // assets
 import heads from "../../Assets/NFT.jpg";
 import STLogo from "../../Assets/stLogo.png";
+import promoGIF from "../../Assets/promo.gif";
 
 // Custom Hooks:
 import useWindowDimensions from "../../useWindowDimensions";
@@ -72,9 +73,10 @@ function Intro() {
           <img className={classes.headerImg} src={STLogo} alt="ST-Logo" />
         </div>
       )} */}
+
       <div className={classes.topCont}>
         <div className={classes.mascotCont}>
-          <img src={heads} alt="mascot" className={classes.mascot} />
+          <img src={promoGIF} alt="mascot" className={classes.mascot} />
         </div>
         <div className={classes.counterTextCont}>
           {/* {width >= 800 && (
