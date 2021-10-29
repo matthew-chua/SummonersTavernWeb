@@ -41,10 +41,8 @@ export default function Vision() {
                 Explore the possibilities and boundaries of Smart Contracts on
                 Sol
               </li>
-              <li className={classes.item}>
-                Announce details about presales and conduct presales
-              </li>
-              <li className={classes.item}>
+              <li className={classes.done}>Announce details about auction</li>
+              <li className={classes.done}>
                 Build the foundation for the Tavern community
               </li>
             </ul>
@@ -61,18 +59,21 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li className={classes.item}>Minting</li>
+              <li className={classes.item}>Auction, in 5 batches of 10</li>
               <li className={classes.item}>
                 Get verified and listed on top marketplaces
               </li>
               <li className={classes.item}>
-                Set up a treasury, and fund it with 5% of sales proceeds
+                Set up a community wallet that receives 5% of the sales proceeds
+                and a portion of the secondary royalties (Decisions on how the
+                funds are spent will be made by the community)
               </li>
               <li className={classes.item}>
-                3% of royalties will go to the artist and 2% will go to the treasury
+                Do a "boss raid" on Twitter to gain traction among the community
               </li>
               <li className={classes.item}>
-                This treasury is to acquire art pieces for the community and to attract art talent
+                This treasury is to acquire art pieces for the community and to
+                attract art talent
               </li>
             </ul>
           </VerticalTimelineElement>
@@ -87,10 +88,10 @@ export default function Vision() {
             </h3>
 
             <ul className={classes.list}>
-              <li className={classes.item}>Verify summoners</li>
               <li className={classes.item}>
                 Conduct community activities and host events for summoners
               </li>
+              <li className={classes.item}>Hold monthly town hall meetings</li>
               <li className={classes.item}>
                 Build on the tech behind our NFTs, focusing on airdrops
               </li>
@@ -99,7 +100,7 @@ export default function Vision() {
                 the community
               </li>
               <li className={classes.item}>
-              Streamline our incubator’s systems and processes
+                Streamline our incubator’s systems and processes
               </li>
               <li className={classes.item}>More to come...</li>
             </ul>
