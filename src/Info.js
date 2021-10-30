@@ -36,7 +36,7 @@ export const FAQ_LIST = [
 
   {
     id: 5,
-    question: "When Auction?",
+    question: "When will the auction be held?",
     answer: [
       "1 Nov to 5 Nov, with a batch of 10 hand-picked Outworlders launching every day, with rare and ultra-rare pieces in each batch.",
     ],
@@ -46,13 +46,13 @@ export const FAQ_LIST = [
     question: "What will the starting price for the auction be?",
     answer: ["0.6 SOL, with 0.1 sol incremental bids"],
   },
-  {
-    id: 7,
-    question: "When will the public sale be?",
-    answer: [
-      "The remaining 4500 outworlders will be available to mint on 6Nov 1400 UTC.",
-    ],
-  },
+  // {
+  //   id: 7,
+  //   question: "When will the public sale be?",
+  //   answer: [
+  //     "The remaining 4500 outworlders will be available to mint on 6Nov 1400 UTC.",
+  //   ],
+  // },
   {
     id: 8,
     question: "Are there secondary markets?",
