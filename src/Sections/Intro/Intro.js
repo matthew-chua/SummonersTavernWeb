@@ -16,7 +16,11 @@ import classes from "./Intro.module.css";
 // unix timestamp of the actual launch time:1636210800
 // const LAUNCH_DATE = moment([2021, 11, 6, 23, 0, 0]).valueOf();
 // LAUNCH DATE: 6 NOVEMBER 2021:
-const LAUNCH_DATE = 1635771600 * 1000;
+const NOW = new Date().valueOf();
+const LAUNCH_DATE =
+  new Date().valueOf() > 1635771600 * 1000
+    ? 1635771600 * 1000 + 86400 * 1000
+    : 1635771600 * 1000;
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
