@@ -56,10 +56,10 @@ function Intro() {
       );
 
       setTimer({
-        days: daysLeft,
-        hours: hoursLeft,
-        minutes: minutesLeft,
-        seconds: secondsLeft,
+        days: daysLeft <= 0 ? 0 : daysLeft,
+        hours: hoursLeft <= 0 ? 0 : hoursLeft,
+        minutes: minutesLeft <= 0 ? 0 : minutesLeft,
+        seconds: secondsLeft <= 0 ? 0 : secondsLeft,
       });
     }, 1000);
     return () => {
