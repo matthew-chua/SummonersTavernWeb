@@ -65,8 +65,8 @@ export default function Vision() {
               </li>
               <li className={classes.item}>
                 Set up a community wallet that receives 5% of the sales proceeds
-                and a portion of the secondary royalties (Decisions on how the
-                funds are spent will be made by the community)
+                (Decisions on how the funds are spent will be made by the
+                community)
               </li>
               <li className={classes.item}>
                 Do a "boss raid" on Twitter to gain traction among the community
