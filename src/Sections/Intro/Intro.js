@@ -18,9 +18,9 @@ import classes from "./Intro.module.css";
 // LAUNCH DATE: 6 NOVEMBER 2021:
 const NOW = new Date().valueOf();
 const LAUNCH_DATE =
-  new Date().valueOf() > 1635771600 * 1000
-    ? 1635771600 * 1000 + 86400 * 1000
-    : 1635771600 * 1000;
+  new Date().valueOf() > 1635771600 * 1000 + 86400 * 1000
+    ? 1635771600 * 1000 + 86400 * 1000 + 86400 * 1000
+    : 1635771600 * 1000 + 86400 * 1000;
 console.log("LAUNCH_DATE: ", LAUNCH_DATE);
 
 function Intro() {
